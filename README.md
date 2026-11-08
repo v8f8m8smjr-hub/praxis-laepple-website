@@ -20,9 +20,9 @@ Die Website wird über GitHub Pages bereitgestellt: https://v8f8m8smjr-hub.githu
 - Die Schriftarten werden aktuell von Google Fonts geladen. Für eine datensparsame Veröffentlichung die Schriftdateien lokal einbinden und die Datenschutzhinweise an den Webhost anpassen.
 - Die Telefonnummer vor Veröffentlichung testen; das Postfach `praxis.laepple@gmail.com` regelmäßig betreuen.
 - Der Anmeldebogen ist ein ausfüllbarer Vorabentwurf. Rückgabeweg und Datenschutzhinweise festlegen, bevor ausgefüllte Bögen angenommen werden.
-- Die öffentliche Vorschau ist über GitHub Pages erreichbar. Die gewünschte eigene Domain ist noch nicht verbunden.
+- Die öffentliche Vorschau ist über GitHub Pages erreichbar. Die gewünschte Domain `praxis-laepple.de` ist bestellt, aber noch nicht mit der Website verbunden.
 - Die Notfallhinweise und Rufnummern vor Veröffentlichung nochmals anhand der verlinkten offiziellen Stellen prüfen.
-- Die Illustration im Abschnitt „Meine Person“ ist ein gestalteter Platzhalter, kein Porträt. Bei Bedarf durch ein eigenes Foto ersetzen.
+- Das Porträt im Abschnitt „Meine Person“ wurde aus dem bereitgestellten Foto erstellt. Der Jahrgang 1996 und die Zusatzqualifikationen Progressive Muskelrelaxation nach Jacobson sowie Gruppenpsychotherapie wurden ergänzt.
 - Geburtsdatum, Geburtsort, private Unterschrift und weitere persönliche Angaben aus dem Lebenslauf wurden nicht veröffentlicht. Anschrift und Telefonnummer stehen auf der Website, weil du sie ausdrücklich als Praxis-Kontakt angegeben hast.
 
 ## Domain
