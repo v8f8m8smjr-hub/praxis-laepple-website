@@ -2,6 +2,7 @@
 <title id="orientierung-title">Drei Symbole für die gemeinsame Arbeit</title><desc id="orientierung-desc">Ein reduziertes Ohr steht für Zuhören, zwei überlappende Formen für gemeinsames Verstehen und Stufen für nächste Schritte.</desc>
 <circle cx="120" cy="75" r="57" fill="var(--paper,#f7f5ef)" stroke="var(--sage,#b8c8ae)" stroke-width="2"/><circle cx="360" cy="75" r="57" fill="var(--paper,#f7f5ef)" stroke="var(--sage,#b8c8ae)" stroke-width="2"/><circle cx="600" cy="75" r="57" fill="var(--paper,#f7f5ef)" stroke="var(--sage,#b8c8ae)" stroke-width="2"/>
 <path d="M136 103c-6 8-14 12-23 12-14 0-23-11-23-25V66c0-17 12-28 28-28s28 11 28 27c0 10-5 18-13 24-7 5-10 10-11 16" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M119 92c0-9 5-15 12-20" fill="none" stroke="var(--coral,#a55336)" stroke-width="3" stroke-linecap="round"/>
-<path d="M333 100c-11-14-10-31 1-42 12-11 27-5 39 8 11-13 27-19 39-8 12 11 12 28 1 42-10 12-23 22-40 34-17-12-30-22-40-34Z" fill="var(--sage,#b8c8ae)"/><path d="M360 116c9-17 22-32 39-45" fill="none" stroke="var(--ink,#183b38)" stroke-width="3" stroke-linecap="round"/>
+<circle cx="345" cy="75" r="29" fill="var(--sage,#b8c8ae)" stroke="var(--ink,#183b38)" stroke-width="2.5"/><circle cx="375" cy="75" r="29" fill="var(--coral-light,#f1d7c7)" stroke="var(--ink,#183b38)" stroke-width="2.5"/>
 <path d="M565 105h27V88h25V71h24" fill="none" stroke="var(--ink,#183b38)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="565" cy="105" r="4" fill="var(--coral,#a55336)"/><circle cx="617" cy="88" r="4" fill="var(--coral,#a55336)"/><circle cx="641" cy="71" r="4" fill="var(--coral,#a55336)"/>
 </svg>
+
