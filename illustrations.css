@@ -1,3 +1,4 @@
+/* SVG illustrations stay within the existing copy blocks. */
 .inline-illustration {
   display: block;
   height: auto;
@@ -5,46 +6,50 @@
   overflow: visible;
 }
 
+.welcome-content {
+  grid-template-columns: 1fr .78fr 116px;
+  gap: 32px;
+}
+
 .illustration-orientation {
-  width: min(360px, 76%);
-  margin: 40px auto 14px;
+  width: 116px;
+  align-self: center;
+  margin: 0;
 }
 
-.welcome .value-grid {
-  margin-top: 28px;
-}
-
-.illustration-treatment {
-  width: min(360px, 100%);
-  margin: 28px 0 24px auto;
-}
-.illustration-family {
-  width: min(360px, 100%);
-  margin: 18px 0 22px auto;
-}
-
+.illustration-treatment,
+.illustration-family,
 .illustration-contact {
-  width: min(360px, 100%);
-  margin: 28px auto 0;
+  float: right;
+  width: min(118px, 30%);
+  margin: 0 0 8px 12px;
 }
 
 @media (max-width: 760px) {
-.illustration-orientation {
-    width: min(330px, 92%);
-    margin: 26px auto 4px;
+  .welcome-content {
+    grid-template-columns: minmax(0, 1fr) 88px;
+    gap: 12px;
   }
 
-  .illustration-treatment {
-    width: min(330px, 95%);
-    margin: 22px auto 20px;
-  }
-.illustration-family {
-    width: min(330px, 96%);
-    margin: 14px auto 18px;
+  .welcome-content h2 {
+    grid-column: 1 / -1;
   }
 
+  .welcome-content > div {
+    grid-column: 1;
+  }
+
+  .illustration-orientation {
+    grid-column: 2;
+    grid-row: 2;
+    width: 88px;
+    align-self: end;
+  }
+
+  .illustration-treatment,
+  .illustration-family,
   .illustration-contact {
-    width: min(330px, 95%);
-    margin: 22px auto 0;
+    width: min(88px, 27%);
+    margin: 0 0 6px 8px;
   }
 }
