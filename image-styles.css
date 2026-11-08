@@ -43,3 +43,4 @@
 .offer-wait-note{margin:18px 0 0;color:#bac9bd;font-size:12px;line-height:1.7}
 .crisis-note h4{margin:18px 0 7px;font-size:14px}
 .crisis-note section+section{border-top:1px solid #ffffff24;margin-top:16px;padding-top:2px}
+@media(max-width:760px){.legal-document h1{font-size:clamp(32px,10vw,48px);overflow-wrap:anywhere}.person-copy h2{hyphens:auto;overflow-wrap:anywhere}}
