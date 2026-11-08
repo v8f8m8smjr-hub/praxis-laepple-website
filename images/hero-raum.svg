@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration eines ruhigen Gesprächsraums</title>
+  <desc id="desc">Ein heller Raum mit großem Rundbogenfenster, einem Sessel und einer Pflanze in sanften Grün- und Terrakottatönen.</desc>
+  <rect width="900" height="760" fill="#e7ebe2"/>
+  <circle cx="682" cy="142" r="91" fill="#e9b99d"/>
+  <path d="M88 760V338C88 146 220 50 404 50s316 96 316 288v422Z" fill="#c8d3c4"/>
+  <path d="M124 760V347c0-169 112-258 280-258s280 89 280 258v413Z" fill="#f4f0e7"/>
+  <path d="M250 393V300c0-84 58-137 154-137s154 53 154 137v93Z" fill="#dfc1a6"/>
+  <path d="M274 393V304c0-67 48-112 130-112s130 45 130 112v89Z" fill="#bed0c4"/>
+  <path d="M405 195v198M276 307h256" stroke="#f4f0e7" stroke-width="9"/>
+  <path d="M274 390c42-46 87-67 131-67s89 21 130 67v5H274Z" fill="#9fb6a5" opacity=".8"/>
+  <path d="M380 760V628c0-47 38-85 85-85h50c48 0 86 38 86 85v132Z" fill="#466e64"/>
+  <path d="M352 641c0-20 16-36 36-36h170c20 0 36 16 36 36v22H352Z" fill="#d8896c"/>
+  <path d="M381 654v106m184-106v106" stroke="#7e6e5e" stroke-width="11"/>
+  <path d="M122 687h175l17 21H105Z" fill="#9caa98"/>
+  <path d="M178 687c2-80 1-128-10-181m13 118c-26-40-42-57-66-72m68 49c24-40 40-57 66-71m-68 27c-19-39-27-66-28-102" fill="none" stroke="#748d79" stroke-width="7" stroke-linecap="round"/>
+  <path d="M107 551c20 0 38 15 41 40-25 6-45-8-50-31m102 10c-2-26 13-43 39-46 7 26-8 47-33 53m-62-88c18 5 29 23 25 48-24-1-39-20-35-43" fill="#9eb19a"/>
+  <path d="M100 709h200" stroke="#6e8273" stroke-width="3"/>
+  <circle cx="764" cy="374" r="7" fill="#d8896c"/><circle cx="135" cy="207" r="6" fill="#d8896c"/>
+  <path d="M751 462h74" stroke="#c8d3c4" stroke-width="2"/>
+</svg>
