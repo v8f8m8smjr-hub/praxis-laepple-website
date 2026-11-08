@@ -83,7 +83,7 @@
   background: transparent;
   border-radius: 0;
   overflow: visible;
-  opacity: .19;
+  opacity: .25;
   pointer-events: none;
 }
 
@@ -115,7 +115,7 @@
   top: 10%;
   width: min(380px, 42%);
   margin: 0;
-  opacity: .18;
+  opacity: .25;
   pointer-events: none;
 }
 
@@ -141,7 +141,7 @@
   top: 44%;
   width: min(340px, 38%);
   margin: 0;
-  opacity: .18;
+  opacity: .34;
   pointer-events: none;
 }
 
@@ -153,7 +153,7 @@
   bottom: 4%;
   width: min(340px, 42%);
   margin: 0;
-  opacity: .18;
+  opacity: .25;
   pointer-events: none;
 }
 
@@ -165,7 +165,7 @@
   top: 145px;
   width: min(350px, 46%);
   margin: 0;
-  opacity: .18;
+  opacity: .25;
   pointer-events: none;
 }
 
@@ -174,7 +174,7 @@
     top: 50%;
     right: -5%;
     width: 88%;
-    opacity: .15;
+    opacity: .20;
   }
 
   .hero-copy {
@@ -191,20 +191,26 @@
     width: min(250px, 52%);
     right: 0;
     top: 47%;
-    opacity: .14;
+    opacity: .20;
   }
 
   .illustration-family {
     width: min(250px, 52%);
     right: -2%;
     bottom: 7%;
-    opacity: .15;
+    opacity: .20;
   }
 
   .illustration-contact {
     width: min(250px, 52%);
     left: 0;
     top: 172px;
-    opacity: .14;
+    opacity: .20;
   }
+}
+
+/* Die Geigenfeige liegt auf dem dunklen Behandlungsfeld; etwas mehr Deckkraft erhält ihre Blattfarbe. */
+.offer-section .illustration-treatment { opacity: .34; }
+@media (max-width: 760px) {
+  .offer-section .illustration-treatment { opacity: .28; }
 }
