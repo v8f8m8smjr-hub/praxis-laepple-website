@@ -20,7 +20,7 @@ Wenn später bewusst Webfonts verwendet werden sollen:
 ## Verbleibende Angaben vor dem echten Praxisbetrieb
 
 - Konkrete Altersgrenze wurde nicht angegeben und wird daher nicht behauptet.
-- Konkrete Uhrzeiten für die Praxiszeiten wurden nicht mitgeteilt; die genannten Anfahrt- und Barrierefreiheitsinformationen stammen aus den Praxisangaben.
+- Praxiszeiten und Telefonzeiten sind gemäß den Praxisangaben auf der Startseite aufgeführt.
 - Abrechnungsweg und Kostenübernahme müssen im Einzelfall vor Behandlungsbeginn geklärt werden.
 - Beschäftigungs- bzw. Zulassungsstatus innerhalb der Gemeinschaftspraxis wurde nicht angegeben und wird nicht behauptet.
 - In den Datenschutzhinweisen ist die konkrete Speicherfrist der GitHub-Pages-Verbindungsdaten nicht verlässlich angegeben; Drittlandübermittlungen und Rechtsgrundlagen sollten vor Veröffentlichung rechtlich geprüft werden.

@@ -1,13 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="familie-title familie-desc" style="color:var(--ink,#183b38)">
-  <title id="familie-title">Einladender Platz für Gespräche</title>
-  <desc id="familie-desc">Zwei bequeme Sessel stehen einander mit einem kleinen Tisch, einer Tasse Tee und einer Pflanze gegenüber.</desc>
-  <path d="M25 360V140C25 57 83 22 170 22h260c87 0 145 35 145 118v220Z" fill="var(--paper-dark,#ece9df)"/>
-  <path d="M61 360V146c0-57 39-88 109-88h260c70 0 109 31 109 88v214Z" fill="var(--white,#fffefa)"/>
-  <path d="M104 360v-65c0-18 14-32 32-32h81c18 0 32 14 32 32v65Z" fill="var(--sage,#b8c8ae)"/><path d="M92 289c0-15 12-27 27-27h13v-36c0-13 10-23 23-23h44c13 0 23 10 23 23v43H124v25H92Z" fill="var(--ink-soft,#345451)"/>
-  <path d="M351 360v-65c0-18 14-32 32-32h81c18 0 32 14 32 32v65Z" fill="var(--coral-light,#f1d7c7)"/><path d="M340 289c0-15 12-27 27-27h13v-36c0-13 10-23 23-23h44c13 0 23 10 23 23v43h-98v25h-32Z" fill="var(--coral,#a55336)" opacity=".8"/>
-  <path d="M220 274h160l-12 18H232Z" fill="var(--paper-dark,#ece9df)"/><path d="M244 292h10v43h-10zm102 0h10v43h-10z" fill="var(--muted,#5f6d67)"/>
-  <path d="M295 249h22v23h-22z" fill="var(--coral-light,#f1d7c7)"/><path d="M300 245c0-9 12-9 12 0" fill="none" stroke="var(--coral,#a55336)" stroke-width="3" stroke-linecap="round"/><path d="M300 254h12" stroke="var(--coral,#a55336)" stroke-width="2.5"/>
-  <path d="M512 263c0-39-1-69-7-91m8 68c-15-19-24-26-37-31m37 20c14-19 24-27 37-32m-38 4c-10-17-13-29-12-42" fill="none" stroke="var(--ink-soft,#345451)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M472 229c14-2 23 7 25 19-14 4-25-3-28-15m61-18c0-13 7-22 20-23 4 13-4 24-17 27m-50-31c11 2 16 11 13 23-12 0-19-9-16-20" fill="var(--sage,#b8c8ae)"/>
-  <path d="M480 271h61l-8 25h-45Z" fill="var(--coral-light,#f1d7c7)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310" role="img" aria-labelledby="familie-title familie-desc" style="color:var(--ink,#183b38)">
+<title id="familie-title">Ein ruhiger Platz für Gespräche</title><desc id="familie-desc">Zwei schlichte Sessel stehen einem kleinen Tisch mit einer Tasse Tee gegenüber; daneben steht eine zurückhaltende Pflanze.</desc>
+<path d="M28 310V125C28 50 78 20 151 20h258c73 0 123 30 123 105v185Z" fill="var(--paper,#f7f5ef)"/>
+<path d="M70 258v-48c0-15 12-27 27-27h81c15 0 27 12 27 27v48Z" fill="var(--sage,#b8c8ae)"/><path d="M62 210c0-13 10-23 23-23h15v-30c0-12 9-21 21-21h34c12 0 21 9 21 21v48H88v20H62Z" fill="var(--ink,#183b38)"/>
+<path d="M355 258v-48c0-15 12-27 27-27h81c15 0 27 12 27 27v48Z" fill="var(--coral-light,#f1d7c7)"/><path d="M347 210c0-13 10-23 23-23h15v-30c0-12 9-21 21-21h34c12 0 21 9 21 21v48h-88v20h-26Z" fill="var(--coral,#a55336)"/>
+<path d="M205 223h150l-10 15H215Z" fill="var(--ink,#183b38)"/><path d="M228 238h9v42h-9zm95 0h9v42h-9z" fill="var(--ink,#183b38)"/><path d="M268 195h26v28h-26z" fill="var(--coral-light,#f1d7c7)"/><path d="M273 190c0-8 16-8 16 0m-13 15h10" fill="none" stroke="var(--ink,#183b38)" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M506 236v-62m0 42-24-21m24 12 22-21m-22 6-4-27" fill="none" stroke="var(--ink,#183b38)" stroke-width="3" stroke-linecap="round"/><path d="M482 194c-1-12-9-18-20-17 0 11 7 18 20 19m28-1c2-11 10-17 21-16-1 11-8 18-21 18m-10-36c-7-7-6-16 1-22 7 6 8 15 1 22" fill="var(--sage,#b8c8ae)"/><path d="M487 236h39l-5 20h-29Z" fill="var(--coral-light,#f1d7c7)"/>
 </svg>
