@@ -5,13 +5,8 @@
   overflow: visible;
 }
 
-.illustration-divider {
-  width: min(900px, calc(100% - 64px));
-  margin: 8px auto 0;
-}
-
 .illustration-orientation {
-  width: min(420px, 82%);
+  width: min(360px, 76%);
   margin: 40px auto 14px;
 }
 
@@ -20,54 +15,48 @@
 }
 
 .illustration-treatment {
-  width: min(420px, 100%);
+  width: min(360px, 100%);
   margin: 28px 0 24px auto;
 }
 
 .illustration-process {
-  width: min(900px, 100%);
-  margin: -12px auto 30px;
+  width: min(360px, 100%);
+  margin: 12px auto 24px;
 }
 
 .illustration-family {
-  width: min(420px, 100%);
+  width: min(360px, 100%);
   margin: 18px 0 22px auto;
 }
 
 .illustration-contact {
-  width: min(420px, 100%);
+  width: min(360px, 100%);
   margin: 28px auto 0;
 }
 
 @media (max-width: 760px) {
-  .illustration-divider {
-    width: calc(100% - 40px);
-    margin-top: 0;
-  }
-
-  .illustration-orientation {
-    width: calc(100% + 8px);
-    margin-block: 30px 4px;
-    margin-left: -4px;
+.illustration-orientation {
+    width: min(330px, 92%);
+    margin: 26px auto 4px;
   }
 
   .illustration-treatment {
-    width: min(360px, 96%);
+    width: min(330px, 95%);
     margin: 22px auto 20px;
   }
 
   .illustration-process {
-    width: calc(100% + 10px);
-    margin: 4px -5px 24px;
+    width: min(330px, 96%);
+    margin: 8px auto 18px;
   }
 
   .illustration-family {
-    width: min(390px, 100%);
+    width: min(330px, 96%);
     margin: 14px auto 18px;
   }
 
   .illustration-contact {
-    width: min(360px, 96%);
+    width: min(330px, 95%);
     margin: 22px auto 0;
   }
 }
