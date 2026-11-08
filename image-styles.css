@@ -33,3 +33,4 @@
 .form-download span:last-child{font-size:9px;font-weight:700;color:var(--coral)}
 @media(max-width:760px){.hero-art{margin:42px 0 0 auto;height:auto;width:min(100%,390px);aspect-ratio:1.12}.person-visual{width:min(100%,380px)}.person-image{aspect-ratio:.92}.additional-qualifications ul{flex-direction:column;align-items:flex-start}.crisis-note{width:min(calc(100% - 40px),560px);margin:-38px auto 0;padding-bottom:60px}.crisis-note>div{padding:21px 19px}}
 @media(max-width:760px){.timeline-item{grid-template-columns:76px minmax(0,1fr);gap:11px}.timeline-item>div{min-width:0}}
+@media(max-width:760px){.timeline-item h3{hyphens:auto;overflow-wrap:anywhere}}
