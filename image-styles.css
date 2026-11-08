@@ -2,7 +2,7 @@
 .hero-art img{display:block;width:100%;height:100%;object-fit:contain;border-radius:0;box-shadow:none}
 .person-visual{overflow:visible}
 .person-image{display:block;width:100%;aspect-ratio:.9;object-fit:contain;object-position:50% 70%;box-shadow:0 18px 42px #203c3015}
-.image-caption{display:block;text-align:right;color:var(--muted);font-size:9px;margin-top:9px;letter-spacing:.04em}
+.image-caption{display:block;text-align:right;color:var(--muted);font-size:11px;margin-top:9px;letter-spacing:.04em}
 .contact-card dd small{color:var(--muted);font-weight:400;font-size:10px}
 .contact-card dd a:hover,.legal a:hover{text-decoration:underline;text-underline-offset:3px}
 .crisis-note{width:min(1180px,calc(100% - 64px));margin:-48px auto 0;padding:0 0 76px}
@@ -25,14 +25,14 @@
 .hours-block h4{font:700 13px var(--display);margin:0 0 7px}
 .hours-block dl{margin:0}
 .contact-card .hours-block dl div{padding:5px 0;font-size:11px}
-.hours-block small{display:block;color:var(--muted);font-size:9px;line-height:1.6;margin-top:8px}
+.hours-block small{display:block;color:var(--muted);font-size:11px;line-height:1.6;margin-top:8px}
 .form-download{display:flex;align-items:center;gap:12px;margin-top:20px;padding:15px 0;border-block:1px solid var(--line)}
 .form-download:hover strong{text-decoration:underline;text-underline-offset:3px}
 .form-download .download-symbol{width:32px;height:32px;border-radius:50%;background:#e5e9df;display:grid;place-items:center;color:var(--coral);font-size:18px;flex:0 0 auto}
 .form-download span:nth-child(2){display:flex;flex-direction:column;line-height:1.4;flex:1}
 .form-download strong{font:700 12px var(--display)}
 .form-download small{color:var(--muted);font-size:10px}
-.form-download span:last-child{font-size:9px;font-weight:700;color:var(--coral)}
+.form-download span:last-child{font-size:11px;font-weight:700;color:var(--coral)}
 @media(max-width:760px){.hero-art{margin:42px 0 0 auto;height:auto;width:min(100%,390px);aspect-ratio:4/3}.person-visual{width:min(100%,380px)}.person-image{aspect-ratio:.92}.additional-qualifications ul{flex-direction:column;align-items:flex-start}.crisis-note{width:min(calc(100% - 40px),560px);margin:-38px auto 0;padding-bottom:60px}.crisis-note>div{padding:21px 19px}}
 @media(max-width:760px){.timeline-item{grid-template-columns:76px minmax(0,1fr);gap:11px}.timeline-item>div{min-width:0}}
 
