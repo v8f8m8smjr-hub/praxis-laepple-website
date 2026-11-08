@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 370" role="img" aria-labelledby="behandlung-title behandlung-desc" style="color:var(--ink,#183b38)">
+  <title id="behandlung-title">Material für Gespräch, Spiel und Übungen</title>
+  <desc id="behandlung-desc">Auf einem niedrigen Tisch liegen ein Heft und Stifte. Daneben stehen einfache Holzklötze, ein kleiner Ball und eine Pflanze in einem ruhigen Raum.</desc>
+  <path d="M34 370V144C34 55 91 18 180 18h260c89 0 146 37 146 126v226Z" fill="var(--paper-dark,#ece9df)"/>
+  <path d="M78 370V152c0-62 39-96 102-96h260c63 0 102 34 102 96v218Z" fill="var(--white,#fffefa)"/>
+  <path d="M164 177v-52c0-41 30-68 76-68s76 27 76 68v52Z" fill="var(--coral-light,#f1d7c7)"/>
+  <path d="M182 175v-48c0-30 23-50 58-50s58 20 58 50v48Z" fill="var(--sage,#b8c8ae)"/>
+  <path d="M239 77v98m-57-48h116" fill="none" stroke="var(--white,#fffefa)" stroke-width="5" opacity=".9"/>
+  <path d="M94 276h432l-26 22H120Z" fill="var(--ink-soft,#345451)"/>
+  <path d="M137 298h14v55h-14zm319 0h14v55h-14z" fill="var(--muted,#5f6d67)"/>
+  <path d="M187 255c0-9 7-16 16-16h78v38h-94Z" fill="var(--sage,#b8c8ae)"/><path d="M203 239v-31h30v31m18 0v-45h30v45" fill="var(--coral-light,#f1d7c7)"/>
+  <circle cx="369" cy="244" r="19" fill="var(--coral,#a55336)" opacity=".82"/>
+  <path d="m402 257 70-21 6 12-70 21Z" fill="var(--coral-light,#f1d7c7)"/><path d="m411 278 63-44 7 10-63 44Z" fill="var(--sage,#b8c8ae)"/>
+  <path d="M76 286c3-51 1-86-5-111m8 76c-16-24-27-33-42-40m41 26c16-23 27-33 42-39m-45 5c-12-21-15-35-15-52" fill="none" stroke="var(--ink-soft,#345451)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M35 211c15-2 25 8 27 22-15 5-28-3-31-17m67-13c-1-15 8-25 23-26 4 15-5 27-20 30m-58-35c12 2 18 12 15 26-14 0-22-10-19-23" fill="var(--sage,#b8c8ae)"/>
+  <path d="M43 287h72l-7 27H50Z" fill="var(--coral-light,#f1d7c7)"/>
+</svg>

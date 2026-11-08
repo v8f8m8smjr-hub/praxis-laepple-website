@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" role="img" aria-labelledby="ablauf-title ablauf-desc" style="color:var(--ink,#183b38)">
+  <title id="ablauf-title">Drei Stationen auf einem gemeinsamen Weg</title>
+  <desc id="ablauf-desc">Ein sanfter Weg verbindet ein Kontakt-Symbol, zwei Gesprächssessel und Unterlagen für die probatorischen Sitzungen.</desc>
+  <path d="M77 166c102-117 208-117 310-8s212 113 310 8 137-91 174-69" fill="none" stroke="var(--paper-dark,#ece9df)" stroke-width="48" stroke-linecap="round"/>
+  <path d="M77 166c102-117 208-117 310-8s212 113 310 8 137-91 174-69" fill="none" stroke="var(--sage,#b8c8ae)" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <circle cx="124" cy="128" r="53" fill="var(--white,#fffefa)"/><circle cx="433" cy="158" r="53" fill="var(--white,#fffefa)"/><circle cx="745" cy="132" r="53" fill="var(--white,#fffefa)"/>
+  <rect x="98" y="108" width="51" height="36" rx="7" fill="var(--coral-light,#f1d7c7)"/><path d="m101 113 22 17 23-17" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M401 157v-18c0-8 6-14 14-14h13c8 0 14 6 14 14v18m-48 0h56v9c0 8-6 14-14 14h-28c-8 0-14-6-14-14Zm9 23v12m38-12v12" fill="var(--sage,#b8c8ae)" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="725" y="102" width="38" height="53" rx="5" fill="var(--coral-light,#f1d7c7)"/><path d="M736 117h18m-18 10h18m-18 10h12" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><path d="m720 143 9 9 23-24" fill="none" stroke="var(--coral,#a55336)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

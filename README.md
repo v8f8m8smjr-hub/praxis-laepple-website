@@ -20,7 +20,7 @@ Wenn später bewusst Webfonts verwendet werden sollen:
 ## Verbleibende Angaben vor dem echten Praxisbetrieb
 
 - Konkrete Altersgrenze wurde nicht angegeben und wird daher nicht behauptet.
-- Konkrete Sprechstundenzeiten und Barrierefreiheit/Anfahrt außer dem OpenStreetMap-Link wurden nicht mitgeteilt.
+- Konkrete Uhrzeiten für die Praxiszeiten wurden nicht mitgeteilt; die genannten Anfahrt- und Barrierefreiheitsinformationen stammen aus den Praxisangaben.
 - Abrechnungsweg und Kostenübernahme müssen im Einzelfall vor Behandlungsbeginn geklärt werden.
 - Beschäftigungs- bzw. Zulassungsstatus innerhalb der Gemeinschaftspraxis wurde nicht angegeben und wird nicht behauptet.
 - In den Datenschutzhinweisen ist die konkrete Speicherfrist der GitHub-Pages-Verbindungsdaten nicht verlässlich angegeben; Drittlandübermittlungen und Rechtsgrundlagen sollten vor Veröffentlichung rechtlich geprüft werden.
@@ -28,3 +28,6 @@ Wenn später bewusst Webfonts verwendet werden sollen:
 - Google-Unternehmensprofil sowie Einträge in KV- und DPtV-Suchdiensten erst anlegen, wenn die Praxisdaten bestätigt und die Einträge möglich sind.
 
 Der Anmeldebogen ist als PDF-Datei im Stammverzeichnis enthalten. Vor dem Einsatz bitte den sicheren Rückgabeweg und die Datenschutzhinweise für übermittelte Gesundheitsdaten festlegen.
+
+
+Die sechs Inline-SVG-Illustrationen liegen zusätzlich als eigenständige SVG-Dateien unter `images/illustrationen/`. Sie nutzen CSS-Farbvariablen mit passenden Fallbacks. Größen und responsive Abstände stehen in `illustrations.css`; die SVGs sind in `index.html` an den passenden Abschnitten eingebunden.

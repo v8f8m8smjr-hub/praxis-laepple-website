@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" role="img" aria-labelledby="eingang-title eingang-desc" style="color:var(--ink,#183b38)">
+  <title id="eingang-title">Ein freundlicher Praxiseingang</title>
+  <desc id="eingang-desc">Eine schlichte Eingangstür mit Rundbogen wird von einer kleinen Pflanze und einem geschwungenen Weg begleitet.</desc>
+  <path d="M60 440V146C60 61 113 22 205 22h110c92 0 145 39 145 124v294Z" fill="var(--paper-dark,#ece9df)"/>
+  <path d="M95 440V152c0-64 40-96 110-96h110c70 0 110 32 110 96v288Z" fill="var(--white,#fffefa)"/>
+  <path d="M168 440V192c0-61 37-92 92-92s92 31 92 92v248Z" fill="var(--sage,#b8c8ae)"/>
+  <path d="M187 440V195c0-47 27-73 73-73s73 26 73 73v245Z" fill="var(--coral-light,#f1d7c7)"/>
+  <path d="M203 440V198c0-37 21-57 57-57s57 20 57 57v242Z" fill="var(--paper,#f7f5ef)"/>
+  <path d="M260 145v294" stroke="var(--line,#d9ded5)" stroke-width="3"/><circle cx="295" cy="286" r="5" fill="var(--coral,#a55336)"/>
+  <path d="M43 440c68-48 133-42 205-17s151 25 229-12" fill="none" stroke="var(--paper-dark,#ece9df)" stroke-width="20" stroke-linecap="round"/>
+  <path d="M101 365c0-45-1-76-7-98m8 73c-16-20-26-27-40-32m40 21c15-19 25-27 39-32m-40 5c-10-18-13-30-12-44" fill="none" stroke="var(--ink-soft,#345451)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M58 326c14-2 24 7 26 19-14 4-26-3-29-15m64-18c0-14 8-23 21-24 4 14-4 25-18 28m-51-33c11 2 17 11 14 24-13 0-20-9-17-21" fill="var(--sage,#b8c8ae)"/>
+  <path d="M68 374h67l-9 27H77Z" fill="var(--coral-light,#f1d7c7)"/>
+  <circle cx="421" cy="109" r="24" fill="var(--coral-light,#f1d7c7)"/><path d="M420 88v42m-21-21h42" stroke="var(--white,#fffefa)" stroke-width="3" opacity=".8"/>
+</svg>
