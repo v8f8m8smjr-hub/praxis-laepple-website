@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://v8f8m8smjr-hub.github.io/praxis-laepple-website/sitemap.xml
