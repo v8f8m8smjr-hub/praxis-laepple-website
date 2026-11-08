@@ -1,26 +1,30 @@
 # Praxiswebsite · Kai Läpple
 
-Responsive, mehrseitige statische Website für die Praxis Läpple in Waiblingen. Es gibt keinen Build-Schritt oder zusätzliche Laufzeitabhängigkeit.
+Responsive, mehrseitige statische Website für die Gemeinschaftspraxis Läpple in Waiblingen. Es gibt keinen Build-Schritt und keine extern eingebundenen Schriftdateien, Skripte oder Karten.
 
 ## Vorschau und Bearbeitung
 
-`index.html` im Browser öffnen. Die Seite kann lokal bearbeitet und als statische Website gehostet werden. `impressum.html` und `datenschutz.html` sind eigenständige Seiten.
+`index.html` im Browser öffnen. `impressum.html` und `datenschutz.html` sind eigenständige Seiten. `sitemap.xml` und `robots.txt` liegen für GitHub Pages bei.
 
-## Veröffentlichung
+## Schriftarten
 
-Öffentliche Website: https://v8f8m8smjr-hub.github.io/praxis-laepple-website/
+Die Website lädt keine Google Fonts. `styles.css` nutzt die Systemschriftstapel `system-ui`, `-apple-system`, `BlinkMacSystemFont`, `Segoe UI`, `Arial` sowie `Georgia`/`Times New Roman`. Damit werden Schriften lokal aus dem Betriebssystem gewählt und es ist kein Download von WOFF2-Dateien erforderlich.
 
-Die Website wird über GitHub Pages veröffentlicht. Die Domain `praxis-laepple.de` wird erst verwendet, wenn sie registriert und mit dem Hosting verbunden ist.
+Wenn später bewusst Webfonts verwendet werden sollen:
+1. Die gewünschten Schriftfamilien und Schriftschnitte auswählen und die Lizenz prüfen.
+2. Die WOFF2-Dateien mit einem Webfont-Konverter wie google-webfonts-helper erzeugen bzw. beziehen.
+3. Die Dateien in einen Ordner `fonts/` im Projekt legen.
+4. Für jeden Schriftschnitt passende `@font-face`-Regeln mit `font-display: swap` in `styles.css` ergänzen.
+5. Die CSS-Variablen `--sans`, `--display` und `--serif` auf die neuen Familien umstellen und prüfen, dass keine Google-Fonts-Links übrig sind.
 
-## Website-Inhalte
+## Verbleibende Angaben vor dem echten Praxisbetrieb
 
-- Praxisstart geplant ab Januar 2027; Anfragen voraussichtlich ab Dezember 2026.
-- Behandlung für Kinder, Jugendliche und junge Erwachsene; eine konkrete Altersgrenze wird nicht angegeben.
-- Informationen zu häufigen Anliegen, Verhaltenstherapie, Sprechstunde und Probatorik.
-- Keine Terminformulare, Analyse- oder Werbedienste. Schriftarten werden aus lokalen Systemschriften gewählt; es werden keine Google-Fonts geladen.
-- Die Datenschutzhinweise beschreiben GitHub Pages als Hosting, den Gmail-Kontaktweg sowie die Rechte betroffener Personen.
-- Der herunterladbare Anmeldebogen ist ausfüllbar. Bitte die Abgabe mit der Praxis abstimmen und keine vertraulichen Gesundheitsdaten unverschlüsselt per E-Mail senden.
+- Konkrete Altersgrenze wurde nicht angegeben und wird daher nicht behauptet.
+- Konkrete Sprechstundenzeiten und Barrierefreiheit/Anfahrt außer dem OpenStreetMap-Link wurden nicht mitgeteilt.
+- Abrechnungsweg und Kostenübernahme müssen im Einzelfall vor Behandlungsbeginn geklärt werden.
+- Beschäftigungs- bzw. Zulassungsstatus innerhalb der Gemeinschaftspraxis wurde nicht angegeben und wird nicht behauptet.
+- In den Datenschutzhinweisen ist die konkrete Speicherfrist der GitHub-Pages-Verbindungsdaten nicht verlässlich angegeben; Drittlandübermittlungen und Rechtsgrundlagen sollten vor Veröffentlichung rechtlich geprüft werden.
+- Impressum und Datenschutz sollten vor dem tatsächlichen Praxisbetrieb rechtlich geprüft werden.
+- Google-Unternehmensprofil sowie Einträge in KV- und DPtV-Suchdiensten erst anlegen, wenn die Praxisdaten bestätigt und die Einträge möglich sind.
 
-## Einträge außerhalb der Website
-
-Ein Google-Unternehmensprofil sowie Einträge in der psychotherapeutischen Suche der KVBW und der DPtV sollten erst angelegt werden, wenn Praxisstart, Behandlungskapazität und die jeweiligen Profile verifiziert werden können.
+Der Anmeldebogen-Link ist im HTML auskommentiert und die PDF-Datei wird nicht mit der öffentlichen Website ausgeliefert, bis Rückgabeweg und Datenschutz festgelegt sind.
