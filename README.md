@@ -27,4 +27,4 @@ Wenn später bewusst Webfonts verwendet werden sollen:
 - Impressum und Datenschutz sollten vor dem tatsächlichen Praxisbetrieb rechtlich geprüft werden.
 - Google-Unternehmensprofil sowie Einträge in KV- und DPtV-Suchdiensten erst anlegen, wenn die Praxisdaten bestätigt und die Einträge möglich sind.
 
-Der Anmeldebogen-Link ist im HTML auskommentiert und die PDF-Datei wird nicht mit der öffentlichen Website ausgeliefert, bis Rückgabeweg und Datenschutz festgelegt sind.
+Der Anmeldebogen ist als PDF-Datei im Stammverzeichnis enthalten. Vor dem Einsatz bitte den sicheren Rückgabeweg und die Datenschutzhinweise für übermittelte Gesundheitsdaten festlegen.
