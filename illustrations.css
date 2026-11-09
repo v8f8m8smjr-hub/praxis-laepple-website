@@ -469,3 +469,10 @@ body{overflow-x:hidden}
 @media(max-width:760px){
   .hero::before,.welcome::before,.process-section::before{width:100vw;left:50%;right:auto}
 }
+
+/* Tree-shaped KL mark with a warm, dimensional crown. */
+.brand-mark svg{width:43px;height:43px;top:-2px}
+.brand-mark svg .tree-trunk{stroke:none}
+.brand-mark svg .tree-branch{stroke:#a87760;stroke-width:4.5;stroke-linecap:round}
+.brand-mark svg .tree-crown{stroke:none}
+.brand-initials{top:48%;font-size:12px;letter-spacing:-.08em}
