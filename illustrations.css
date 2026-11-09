@@ -231,3 +231,9 @@ body{color:var(--ink)}
 @media(prefers-reduced-motion:reduce){
  .hero-art,.person-image{transform:none!important}
 }
+
+
+/* Make labels and secondary reading comfortable at desktop and mobile sizes. */
+.section-kicker,.mini-label{font-size:14px}
+.hero-bottom{font-size:13px}
+@media(max-width:760px){.hero-bottom{font-size:13px}}
