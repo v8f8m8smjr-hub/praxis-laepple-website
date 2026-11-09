@@ -424,6 +424,6 @@ body{color:var(--ink)}
 .ambient--hero .ambient-orb{width:clamp(110px,15vw,210px)!important;filter:blur(3px)!important;opacity:.4!important}
 .ambient--hero .ambient-ring{width:clamp(190px,22vw,300px)!important;filter:blur(6px)!important;opacity:.23!important;border-color:rgba(255,255,255,.28)!important}
 .ambient--hero .ambient-petal{width:clamp(120px,16vw,230px)!important;height:clamp(160px,21vw,300px)!important;filter:blur(5px)!important;opacity:.3!important;border-color:rgba(255,255,255,.2)!important}
-.ambient--hero .bead-three{display:none!important}
+.ambient-bead.bead-three{display:none!important}
 .qualification-extras{border-block:1px solid var(--line);padding-block:20px}
 .qualification-extras .additional-qualifications ul{border:0!important}
