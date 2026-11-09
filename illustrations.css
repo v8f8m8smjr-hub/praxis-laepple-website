@@ -463,7 +463,7 @@ body{overflow-x:hidden}
 .brand-mark::before{display:none!important}
 .brand-mark svg{display:block!important;position:absolute;inset:2px auto auto 50%;transform:translateX(-50%);width:42px;height:31px;overflow:visible;fill:none;stroke:none}
 .brand-mark svg .cloud-shadow{fill:#bd927b;stroke:none;opacity:.25;filter:blur(1.4px)}
-.brand-mark svg .cloud-body{fill:#e9cbb8;stroke:none}
+.brand-mark svg .cloud-body{stroke:none}
 .brand-mark svg .cloud-glint{fill:none;stroke:rgba(255,253,249,.58);stroke-width:1.35;stroke-linecap:round}
 .brand-initials{z-index:2;position:absolute;left:50%;top:50%;transform:translate(-50%,-52%);color:#574a43}
 @media(max-width:760px){
