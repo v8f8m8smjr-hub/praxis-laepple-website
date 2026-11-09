@@ -151,3 +151,11 @@ section{scroll-margin-top:5rem}
 @media(max-width:760px){
  .welcome::after{width:30vw;height:48vw;right:-4%;top:10%;opacity:.6}
 }
+
+
+/* Keep the first screen immediately readable while the lower sections reveal on scroll. */
+.hero [data-reveal]{
+ opacity:1!important;
+ transform:none!important;
+ transition:none!important;
+}
