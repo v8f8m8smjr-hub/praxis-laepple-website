@@ -159,3 +159,75 @@ section{scroll-margin-top:5rem}
  transform:none!important;
  transition:none!important;
 }
+
+
+/* Editorial refresh: one concrete plant motif, fewer abstract frames, stronger reading contrast. */
+:root{
+ --paper:#fbf8f2;--paper-dark:#efe2d6;--ink:#493c35;--ink-soft:#5e4f47;--muted:#66564d;
+ --coral:#a65f4d;--coral-light:#ead0c1;--sage:#c5cdbd;--line:#d8c8bb;--white:#fffdf9;
+ --sand:#e4cfbb;--apricot:#e2b49e;--clay:#bd8068;--butter:#ead9aa;--olive:#78816c;
+}
+body{color:var(--ink)}
+/* Remove decorative arch motifs and let the leaf illustration carry the hero. */
+.hero::before,.hero::after,.welcome::after,.person-section::before,.offer-section::before,
+.family-section::after,.contact-section::before{content:none!important;display:none!important}
+.hero{background:linear-gradient(112deg,#fbf8f2 0%,#f8f1e8 70%,#f1e4d9 100%)}
+.hero-art{
+ height:min(39vw,470px);min-height:360px;position:relative;z-index:1;overflow:visible;
+ display:flex;flex-direction:column;justify-content:center;align-items:center;
+ margin:0 0 16px;padding:0;background:transparent;border-radius:0;
+ transform:translate3d(0,calc(var(--scene-shift,0px)*.35),0);will-change:transform;
+}
+.hero-art svg{display:block;width:min(100%,465px);height:100%;max-height:450px;overflow:visible;filter:drop-shadow(0 12px 14px rgba(81,68,61,.08))}
+.hero-art figcaption{align-self:flex-end;margin:0 12% 0 0;color:#58483f;font:italic 16px Georgia,serif}
+.hero-bottom{color:#55463e;font-size:13px}
+.person-section{background:linear-gradient(118deg,#ead8c9 0%,#f1e6da 55%,#ead9ca 100%)}
+.person-visual::before{border-radius:2px;background:#d2b19b;transform:rotate(1.5deg)}
+.person-image{border-radius:2px;transform:translate3d(0,calc(var(--scene-shift,0px)*-.28),0);will-change:transform}
+.offer-section{background:linear-gradient(125deg,#e7ecec 0%,#eef0ed 52%,#f1e4da 100%);color:var(--ink)}
+.offer-section::before{display:none}
+.offer-section .section-kicker,.offer-section .section-kicker span,
+.offer-section .offer-layout>div:first-child>p:not(.eyebrow),
+.offer-section .offer-layout .muted{color:#51443d!important}
+.offer-section .membership-note{background:rgba(255,253,249,.82)}
+.offer-section .offer-card{background:rgba(255,253,249,.92);border-color:rgba(73,60,53,.16)}
+.offer-section .offer-card h3,.offer-section .offer-card p{color:#493c35}
+.family-section{background:linear-gradient(112deg,#f0ddd2 0%,#f7eee7 58%,#ede0d5 100%)}
+.family-section::after{display:none}
+.family-note{background:#e5e9e8;border-left-color:#8a6557;color:#493c35}
+.family-note p{color:#493c35}
+.button-outline{border-color:#8a6557;color:#493c35;background:rgba(255,253,249,.5)}
+.contact-section{background:linear-gradient(125deg,#f1e5da,#faf5ed 56%,#ead9ca)}
+.contact-section::before{display:none}
+.site-footer{background:linear-gradient(112deg,#e5cfbb,#f1dfd0);color:#493c35}
+.site-footer .footer-brand .brand-copy small,.site-footer .footer-main>p,
+.site-footer .footer-bottom,.site-footer .footer-bottom a,.site-footer .footer-top{color:#493c35}
+.site-footer .footer-main>p{font-style:italic}
+.site-footer .footer-main>p,.site-footer .footer-bottom,.site-footer .footer-bottom a{font-size:14px}
+.site-nav{font-size:14px;color:#493c35}
+.section-kicker,.section-kicker span,.hero-bottom,.value-grid p,.welcome-content .muted,
+.qualification-head p,.timeline-item p,.process-heading p,.process-steps p,
+.contact-card dt,.contact-card dd,.contact-card small,.contact-layout>div:first-child>p:not(.eyebrow),
+.family-content>p:not(.eyebrow),.family-note p,.offer-card p{
+ color:#57483f!important;
+}
+.value-grid p,.welcome-content .muted,.qualification-head p,.timeline-item p,
+.process-steps p,.offer-card p,.family-note p{font-size:14px}
+.contact-card dl div,.form-note{font-size:14px}
+.contact-card a{color:#824735;text-decoration:underline;text-underline-offset:3px}
+.contact-card a:focus-visible,.crisis-note a:focus-visible{outline-color:#704536}
+.contact-card dd small{display:block;margin-top:.45rem;line-height:1.55;font-size:13px;color:#58483f}
+.crisis-note{color:#493c35}
+.crisis-note a{color:#704536;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){
+ .hero-art{height:300px;min-height:0;width:min(100%,360px);margin:28px auto 4px}
+ .hero-art svg{max-height:300px}
+ .hero-art figcaption{margin-right:4%;font-size:14px}
+ .hero-bottom{font-size:12px}
+ .site-nav{font-size:16px}
+ .offer-section{background:linear-gradient(165deg,#e7ecec,#f5ece4)}
+ .value-grid p,.welcome-content .muted,.qualification-head p,.timeline-item p,.process-steps p,.offer-card p,.family-note p{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-art,.person-image{transform:none!important}
+}
