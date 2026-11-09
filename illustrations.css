@@ -391,3 +391,30 @@ body{color:var(--ink)}
 
 /* Keep the portrait image edge fully unobstructed. */
 .person-visual::after{display:none!important}
+
+
+/* Formen in Textbereichen werden zu weichem Licht; freier Raum darf Kontur behalten. */
+.ambient--hero .ambient-sculpture{opacity:.38!important;filter:blur(22px)!important}
+.ambient--hero .ambient-ring{opacity:.34!important;filter:blur(2.5px)!important}
+.ambient--hero .ambient-orb{opacity:.52!important;filter:blur(1.4px)!important}
+.ambient--hero .bead-one,.ambient--hero .bead-two,.ambient--hero .bead-three{opacity:.48!important;filter:blur(1.3px)}
+.ambient--welcome .ambient-shape,.ambient--welcome .ambient-bead{opacity:.24!important;filter:blur(6px)!important}
+.ambient--person .ambient-shape,.ambient--person .ambient-bead{opacity:.24!important;filter:blur(4px)!important}
+.ambient--qualifications .ambient-shape,.ambient--qualifications .ambient-bead{opacity:.19!important;filter:blur(10px)!important}
+.ambient--offer .ambient-shape,.ambient--offer .ambient-bead{opacity:.22!important;filter:blur(8px)!important}
+.ambient--family .ambient-shape,.ambient--family .ambient-bead{opacity:.27!important;filter:blur(7px)!important}
+.ambient--contact .ambient-shape,.ambient--contact .ambient-bead{opacity:.22!important;filter:blur(8px)!important}
+/* Calm, organic initials mark without a surrounding badge or outline. */
+.brand-mark svg{fill:none;stroke:none}
+.brand-mark svg .brand-leaf{fill:#d8b79e;stroke:none;opacity:.88}
+.brand-mark svg .brand-leaf--second{fill:#c2cbb8;opacity:.82}
+.brand-initials{z-index:1;color:#574a43;letter-spacing:-.08em}
+.ambient-orb{animation-duration:15s}
+.ambient-ring{animation-duration:20s}
+.ambient-petal{animation-duration:18s}
+.ambient-bead{animation-duration:12s}
+.ambient-sculpture{animation-duration:30s}
+@media(max-width:760px){
+ .ambient--hero .ambient-sculpture{opacity:.3!important;filter:blur(18px)!important}
+ .ambient--hero .ambient-petal{opacity:.58!important;filter:blur(1.5px)!important}
+}
