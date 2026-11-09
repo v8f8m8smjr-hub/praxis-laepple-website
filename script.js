@@ -1,36 +1,5 @@
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.site-nav');
-
-toggle.addEventListener('click', () => {
-  const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-  toggle.setAttribute('aria-expanded', String(!isOpen));
-  nav.classList.toggle('is-open', !isOpen);
-  toggle.querySelector('.sr-only').textContent = isOpen ? 'Menü öffnen' : 'Menü schließen';
-});
-
-nav.addEventListener('click', (event) => {
-  if (event.target.closest('a')) {
-    toggle.setAttribute('aria-expanded', 'false');
-    nav.classList.remove('is-open');
-    toggle.querySelector('.sr-only').textContent = 'Menü öffnen';
-  }
-});
-
-document.querySelector('#year').textContent = new Date().getFullYear();
-
-
-/* Reveal content only as it enters view; honor reduced motion and older browsers. */
-(() => {
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const targets = document.querySelectorAll('h1,h2,h3,.hero-intro,.section-kicker,.timeline-item,.offer-card,.family-card,.contact-card,.crisis-card,.family-note,.additional-qualifications,.hours-block');
-  if (reduceMotion || !('IntersectionObserver' in window)) return;
-  document.documentElement.classList.add('reveal-ready');
-  targets.forEach((el, i) => {el.dataset.reveal=''; el.style.setProperty('--reveal-delay', (i%4)*70+'ms');});
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}});
-  }, {threshold:.12, rootMargin:'0px 0px -35px 0px'});
-  targets.forEach(el=>observer.observe(el));
-  const fields=[...document.querySelectorAll('.hero,.welcome,.person-section,.offer-section,.family-section,.contact-section')];
-  let queued=false;
-  window.addEventListener('scroll',()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{const vh=innerHeight;fields.forEach(el=>{const r=el.getBoundingClientRect();el.style.setProperty('--parallax-y',Math.max(-18,Math.min(18,(r.top-vh*.5)*-.035))+'px')});queued=false})},{passive:true});
-})();
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));nav.classList.toggle('is-open',!open);const label=toggle.querySelector('.sr-only');if(label)label.textContent=open?'Menü öffnen':'Menü schließen'});nav.addEventListener('click',e=>{if(e.target.closest('a')){toggle.setAttribute('aria-expanded','false');nav.classList.remove('is-open');const label=toggle.querySelector('.sr-only');if(label)label.textContent='Menü öffnen'}})}
+const year=document.querySelector('#year');if(year)year.textContent=new Date().getFullYear();
+(()=>{const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduce||!('IntersectionObserver'in window))return;const targets=document.querySelectorAll('.hero h1,.hero-intro,.hero-actions,.section-kicker,.welcome-content h2,.welcome-content>div,.value-grid article,.person-visual,.person-copy h2,.person-copy>p,.membership-note,.timeline-item,.additional-qualifications,.languages,.offer-layout>div:first-child>*,.offer-card,.process-heading>*,.process-steps article,.family-content>*,.contact-layout>div:first-child>*,.contact-card,.crisis-note');document.documentElement.classList.add('reveal-ready');const delayMap=new WeakMap();targets.forEach(el=>{const group=el.parentElement;const n=delayMap.get(group)||0;delayMap.set(group,n+1);el.dataset.reveal=el.classList.contains('person-visual')?'image':'';el.style.setProperty('--reveal-delay',Math.min(n,3)*75+'ms')});const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}},{threshold:.12,rootMargin:'0px 0px -30px 0px'});targets.forEach(el=>observer.observe(el));const scenes=document.querySelectorAll('.hero,.welcome,.person-section,.offer-section,.family-section,.contact-section');let busy=false;const update=()=>{if(busy)return;busy=true;requestAnimationFrame(()=>{const h=innerHeight;scenes.forEach(el=>{const r=el.getBoundingClientRect();const offset=Math.max(-22,Math.min(22,(r.top+r.height*.5-h*.5)*-.035));el.style.setProperty('--scene-shift',offset+'px')});busy=false})};window.addEventListener('scroll',update,{passive:true});update()})();
