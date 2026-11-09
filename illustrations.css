@@ -346,3 +346,41 @@ body{color:var(--ink)}
  .ambient--family .ambient-ring{width:70px}
 }
 @media(prefers-reduced-motion:reduce){.ambient-shape,.ambient-bead{animation:none!important;will-change:auto;transform:none!important}}
+
+
+/* Editorialer Feinschliff: ruhige Schrift, klare Flächen und geformte Ambient-Ebenen. */
+.hero h1{letter-spacing:-.022em;line-height:1.18;max-width:780px}
+.hero h1 em{white-space:nowrap}
+.hero-intro{max-width:640px;line-height:1.75}
+.section-kicker,.mini-label{font-size:14px;letter-spacing:.075em;color:#57483f}
+.scroll-cue{text-transform:none;letter-spacing:.06em}
+.value-number{display:none}
+.timeline-item{grid-template-columns:170px minmax(0,1fr)}
+.timeline::before{display:none}
+.qualification-extras{align-items:start}
+.qualification-extras .languages{padding-top:0!important;text-align:right}
+.qualification-extras .additional-qualifications,.qualification-extras .languages{margin-top:0}
+.qualification-extras .mini-label{display:block;margin:0 0 12px}
+.qualifications{width:100%;background:linear-gradient(105deg,#f5efe7 0%,#f3e8dd 68%,#ead5c5 100%)}
+.qualifications-inner{width:min(1180px,calc(100% - 64px));margin-inline:auto}
+.qualifications .qualification-head,.qualifications .timeline,.qualifications .qualification-extras{position:relative;z-index:1}
+.ambient-sculpture{width:clamp(230px,29vw,420px);height:clamp(280px,34vw,475px);right:1%;top:20%;border-radius:63% 37% 49% 51%/44% 45% 55% 56%;background:radial-gradient(ellipse at 24% 20%,rgba(255,253,249,.88),transparent 28%),radial-gradient(ellipse at 65% 37%,rgba(226,180,158,.74),transparent 54%),radial-gradient(ellipse at 40% 76%,rgba(194,203,184,.8),rgba(234,217,202,.5) 59%,transparent 78%);filter:drop-shadow(18px 24px 30px rgba(87,74,67,.12));opacity:.7;animation:sculpture-morph 38s ease-in-out infinite alternate}
+.ambient--hero .ambient-sculpture{right:1%;top:23%;opacity:.64}
+.ambient--qualifications .ambient-sculpture{right:-2%;top:28%;width:clamp(260px,33vw,470px);height:clamp(320px,42vw,590px);opacity:.58}
+@keyframes sculpture-morph{0%{border-radius:63% 37% 49% 51%/44% 45% 55% 56%;transform:translate3d(0,0,0) rotate(-4deg) scale(.98)}50%{border-radius:43% 57% 58% 42%/56% 39% 61% 44%;transform:translate3d(-10px,8px,18px) rotate(2deg) scale(1.015)}100%{border-radius:55% 45% 39% 61%/42% 59% 41% 58%;transform:translate3d(6px,-10px,0) rotate(5deg) scale(1.03)}}
+.person-visual{position:relative;isolation:isolate}
+.person-visual::after{content:"";position:absolute;z-index:2;right:-22px;bottom:9%;width:clamp(64px,8vw,105px);height:clamp(94px,12vw,150px);border-radius:61% 39% 52% 48%/42% 52% 48% 58%;background:linear-gradient(145deg,rgba(255,253,249,.78),rgba(226,180,158,.74) 48%,rgba(194,203,184,.8));box-shadow:inset 7px 8px 18px rgba(255,255,255,.72),0 16px 25px rgba(87,74,67,.16);animation:sculpture-morph 36s ease-in-out infinite alternate;pointer-events:none}
+.person-image{position:relative;z-index:1}
+.hero-actions .button-dark{background:#6d5045}
+@media(max-width:760px){
+ .hero h1{max-width:100%;font-size:clamp(38px,10.3vw,53px);letter-spacing:-.018em;line-height:1.16}
+ .hero h1 em{white-space:normal}
+ .ambient-sculpture{width:205px;height:260px;right:-100px;top:32%;opacity:.42}
+ .ambient--hero .ambient-sculpture{right:-112px;top:24%;opacity:.38}
+ .ambient--qualifications .ambient-sculpture{right:-150px;top:34%;width:260px;height:330px;opacity:.34}
+ .qualifications-inner{width:calc(100% - 40px)}
+ .timeline-item{grid-template-columns:1fr;gap:6px}
+ .qualification-extras .languages{text-align:left}
+ .person-visual::after{right:-10px;width:58px;height:86px;opacity:.8}
+}
+@media(prefers-reduced-motion:reduce){.ambient-sculpture,.person-visual::after{animation:none!important;transform:none!important}}
