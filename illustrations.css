@@ -384,3 +384,7 @@ body{color:var(--ink)}
  .person-visual::after{right:-10px;width:58px;height:86px;opacity:.8}
 }
 @media(prefers-reduced-motion:reduce){.ambient-sculpture,.person-visual::after{animation:none!important;transform:none!important}}
+
+/* Keep the portrait fully clear; the foreground form floats in the side gap. */
+.person-visual::after{right:-105px}
+@media(max-width:760px){.person-visual::after{right:-58px}}
