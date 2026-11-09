@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Praxis Läpple – 3D-Baum mit KL</title><desc id="desc">Ein sanft plastischer Baum in Salbei und warmen Naturtönen mit den Initialen KL im Blätterdach.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbf8f2"/><stop offset="1" stop-color="#f2e7dd"/></linearGradient>
+ <radialGradient id="crown" cx="32%" cy="22%" r="82%"><stop stop-color="#d9e0d3"/><stop offset=".44" stop-color="#aebca4"/><stop offset=".82" stop-color="#84977d"/><stop offset="1" stop-color="#697e68"/></radialGradient>
+ <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a87760"/><stop offset=".46" stop-color="#c99a7f"/><stop offset="1" stop-color="#936d5d"/></linearGradient>
+ <filter id="soft-shadow" x="-30%" y="-35%" width="160%" height="190%"><feGaussianBlur stdDeviation="13"/></filter>
+ <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="21"/></filter>
+</defs>
+<rect width="1200" height="630" fill="url(#paper)"/>
+<ellipse cx="600" cy="476" rx="212" ry="28" fill="#896e5f" opacity=".15" filter="url(#soft-shadow)"/>
+<g opacity=".27" filter="url(#soft-glow)"><circle cx="600" cy="240" r="170" fill="#b8c5ad"/></g>
+<!-- trunk and branches -->
+<path d="M575 470c18-62 27-127 23-196h42c-7 72 4 141 24 196H575Z" fill="url(#trunk)"/>
+<path d="M598 331c-35-39-66-62-104-78m142 82c35-38 65-60 101-77" fill="none" stroke="#b88a71" stroke-width="28" stroke-linecap="round"/>
+<!-- quiet layered crown -->
+<g fill="url(#crown)">
+ <circle cx="600" cy="152" r="111"/>
+ <circle cx="486" cy="244" r="105"/>
+ <circle cx="714" cy="244" r="105"/>
+ <ellipse cx="600" cy="292" rx="206" ry="124"/>
+</g>
+<ellipse cx="540" cy="180" rx="58" ry="35" fill="#fffdf9" opacity=".18" filter="url(#soft-glow)"/>
+<text x="600" y="319" text-anchor="middle" font-family="Georgia,serif" font-size="111" font-weight="600" letter-spacing="-7" fill="#51443d">KL</text>
+<text x="600" y="553" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" letter-spacing="2" fill="#51443d">PRAXIS LÄPPLE</text>
+<text x="600" y="594" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" letter-spacing="1" fill="#6c5b50">KINDER- UND JUGENDLICHENPSYCHOTHERAPIE · WAIBLINGEN</text>
+</svg>
