@@ -237,3 +237,14 @@ body{color:var(--ink)}
 .section-kicker,.mini-label{font-size:14px}
 .hero-bottom{font-size:13px}
 @media(max-width:760px){.hero-bottom{font-size:13px}}
+
+/* Ruhige Ambient-Motion: eine weiche Farbkomposition ersetzt das Pflanzenmotiv im Hero. */
+.hero{grid-template-columns:minmax(0,1fr);isolation:isolate;overflow:hidden}
+.hero-copy{max-width:760px}
+.hero::before,.hero::after{content:"";position:absolute;pointer-events:none;z-index:-1}
+.hero::before{width:min(48vw,610px);height:min(70%,500px);right:-1.5%;top:9%;border-radius:58% 42% 63% 37%/45% 48% 52% 55%;background:radial-gradient(ellipse at 28% 38%,rgba(223,173,151,.48),transparent 58%),radial-gradient(ellipse at 70% 32%,rgba(228,207,185,.8),transparent 62%),radial-gradient(ellipse at 58% 78%,rgba(194,203,184,.7),transparent 57%),radial-gradient(ellipse at 85% 75%,rgba(237,216,201,.68),transparent 53%);filter:blur(17px);opacity:.82;transform:translate3d(0,0,0) scale(1);animation:hero-mesh-drift 32s ease-in-out infinite alternate}
+.hero::after{width:clamp(210px,27vw,350px);aspect-ratio:.82;right:10%;top:16%;border:1px solid rgba(168,102,82,.20);border-radius:44% 56% 43% 57%/47% 42% 58% 53%;box-shadow:inset 0 0 0 17px rgba(255,253,249,.12),inset 0 0 0 18px rgba(168,102,82,.08);background:linear-gradient(145deg,rgba(255,253,249,.18),rgba(228,207,185,.09) 48%,rgba(194,203,184,.13));transform:perspective(900px) rotateX(12deg) rotateY(-15deg) rotateZ(-10deg);animation:hero-object-drift 39s ease-in-out infinite alternate}
+@keyframes hero-mesh-drift{0%{transform:translate3d(0,0,0) scale(1) rotate(-2deg)}50%{transform:translate3d(-2.5%,2%,0) scale(1.035) rotate(2deg)}100%{transform:translate3d(1%,-1.5%,0) scale(.99) rotate(-1deg)}}
+@keyframes hero-object-drift{0%{transform:perspective(900px) translate3d(0,0,0) rotateX(12deg) rotateY(-15deg) rotateZ(-10deg)}100%{transform:perspective(900px) translate3d(0,-13px,0) rotateX(16deg) rotateY(-8deg) rotateZ(-6deg)}}
+@media(max-width:760px){.hero{overflow:hidden}.hero-copy{max-width:100%}.hero::before{width:95vw;height:340px;right:-45vw;top:18%;opacity:.68}.hero::after{width:180px;right:2%;top:48%;opacity:.52}}
+@media(prefers-reduced-motion:reduce){.hero::before,.hero::after{animation:none!important}.hero::before{transform:none}.hero::after{transform:perspective(900px) rotateX(12deg) rotateY(-15deg) rotateZ(-10deg)}}
