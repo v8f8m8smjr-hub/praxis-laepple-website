@@ -287,3 +287,62 @@ body{color:var(--ink)}
  .qualifications::before,.qualifications::after,.offer-section::before,.offer-section::after,
  .family-section::before,.family-section::after,.contact-section::before,.contact-section::after{animation:none!important}
 }
+
+/* Portrait reset: explicitly square corners on the photo and its frame. */
+#person .person-visual{border-radius:0!important;clip-path:none!important;mask:none!important;overflow:visible}
+#person .person-visual::before{content:none!important;display:none!important}
+#person .person-image{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 60%;border-radius:0!important;clip-path:none!important;mask:none!important;transform:none!important}
+/* Ambient 3D objects: translucent glass, ceramic forms, polished rings and small light beads. */
+.ambient-composition{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;perspective:1100px;transform-style:preserve-3d}
+.hero>.ambient-composition{inset:0;z-index:0}
+.hero-copy,.hero-bottom{z-index:2}
+.welcome,.qualifications,.contact-section,.family-section,.person-section,.offer-section{position:relative;isolation:isolate;overflow:hidden}
+.welcome>:not(.ambient-composition),.qualifications>:not(.ambient-composition),.person-section>:not(.ambient-composition),.offer-section>:not(.ambient-composition),.family-section>:not(.ambient-composition),.contact-section>:not(.ambient-composition){position:relative;z-index:1}
+.ambient-shape,.ambient-bead{position:absolute;display:block;transform-style:preserve-3d;will-change:transform}
+.ambient-orb{width:clamp(72px,9vw,146px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,255,255,.76);background:radial-gradient(circle at 27% 22%,rgba(255,255,255,.98) 0 4%,rgba(255,255,255,.76) 8%,transparent 24%),radial-gradient(circle at 34% 30%,#fffdf9 0%,#eed2c0 28%,#d79a80 66%,#a65f4d 100%);box-shadow:inset 9px 10px 18px rgba(255,255,255,.62),inset -17px -20px 27px rgba(106,63,50,.28),0 22px 34px rgba(87,74,67,.16);opacity:.9;animation:orb-hover 19s ease-in-out infinite alternate}
+.ambient-orb--sage{background:radial-gradient(circle at 27% 22%,rgba(255,255,255,.98) 0 4%,rgba(255,255,255,.73) 8%,transparent 25%),radial-gradient(circle at 34% 30%,#fffdf9 0%,#dbe0d1 29%,#a7b59c 67%,#71816e 100%)}
+.ambient-orb--sand{background:radial-gradient(circle at 27% 22%,rgba(255,255,255,.98) 0 4%,rgba(255,255,255,.73) 8%,transparent 25%),radial-gradient(circle at 34% 30%,#fffdf9 0%,#f2e5d4 29%,#d3b391 67%,#9c7457 100%)}
+.ambient-ring{width:clamp(100px,14vw,210px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,255,255,.8);background:conic-gradient(from 35deg,rgba(255,255,255,.82),rgba(168,102,82,.3) 14%,rgba(255,253,249,.9) 28%,rgba(194,203,184,.6) 44%,rgba(255,255,255,.93) 61%,rgba(226,180,158,.72) 80%,rgba(255,255,255,.82));box-shadow:inset 5px 7px 12px rgba(255,255,255,.82),inset -9px -13px 16px rgba(87,74,67,.2),0 20px 29px rgba(87,74,67,.11);-webkit-mask:radial-gradient(circle,transparent 49%,#000 53% 69%,transparent 73%);mask:radial-gradient(circle,transparent 49%,#000 53% 69%,transparent 73%);opacity:.84;animation:ring-hover 27s ease-in-out infinite alternate}
+.ambient-ring--small{width:clamp(68px,8vw,112px)}
+.ambient-petal{width:clamp(72px,9vw,132px);height:clamp(102px,13vw,184px);border:1px solid rgba(255,255,255,.64);border-radius:62% 38% 58% 42%/45% 48% 52% 55%;background:radial-gradient(ellipse at 27% 22%,rgba(255,255,255,.94),transparent 23%),linear-gradient(145deg,rgba(255,253,249,.86),rgba(226,180,158,.82) 47%,rgba(166,95,77,.74));box-shadow:inset 8px 7px 17px rgba(255,255,255,.62),inset -10px -13px 22px rgba(95,57,47,.2),0 23px 34px rgba(87,74,67,.13);opacity:.82;animation:petal-hover 23s ease-in-out infinite alternate}
+.ambient-petal--clay{background:radial-gradient(ellipse at 27% 22%,rgba(255,255,255,.95),transparent 22%),linear-gradient(150deg,#f5e8db 0%,#d7a68e 49%,#9e6857 100%)}
+.ambient-bead{width:clamp(9px,1vw,15px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 28% 25%,#fff 0 8%,rgba(255,255,255,.82) 17%,rgba(226,180,158,.9) 49%,#a65f4d 100%);box-shadow:inset 1px 2px 3px rgba(255,255,255,.9),inset -2px -3px 4px rgba(87,74,67,.25),0 7px 12px rgba(87,74,67,.17);opacity:.83;animation:bead-hover 16s ease-in-out infinite alternate}
+.bead-two{width:clamp(7px,.72vw,11px);animation-delay:-7s;background:radial-gradient(circle at 28% 25%,#fff 0 8%,rgba(255,255,255,.85) 17%,#c5cdbd 50%,#71816e 100%)}
+.bead-three{width:clamp(5px,.52vw,8px);animation-delay:-11s;background:radial-gradient(circle at 28% 25%,#fff 0 8%,rgba(255,255,255,.86) 18%,#f1dfac 51%,#bd8068 100%)}
+@keyframes orb-hover{0%{transform:translate3d(0,0,30px) rotateY(-15deg) rotateX(7deg)}100%{transform:translate3d(7px,-18px,0) rotateY(12deg) rotateX(-8deg)}}
+@keyframes ring-hover{0%{transform:translate3d(0,0,0) rotateX(18deg) rotateY(-19deg) rotateZ(-12deg)}100%{transform:translate3d(-12px,14px,22px) rotateX(-5deg) rotateY(12deg) rotateZ(9deg)}}
+@keyframes petal-hover{0%{transform:translate3d(0,0,12px) rotateY(15deg) rotateZ(-8deg) scale(.98)}100%{transform:translate3d(-9px,-15px,0) rotateY(-12deg) rotateZ(8deg) scale(1.04)}}
+@keyframes bead-hover{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(7px,-16px,18px)}}
+/* Distinct placements preserve clear reading space; each element follows its own slow orbit. */
+.ambient--hero .ambient-orb{right:14%;top:18%}
+.ambient--hero .ambient-ring{right:40%;top:52%}
+.ambient--hero .ambient-petal{right:6%;top:55%}
+.ambient--hero .bead-one{right:40%;top:28%}.ambient--hero .bead-two{right:25%;top:70%}.ambient--hero .bead-three{right:12%;top:44%}
+.ambient--welcome .ambient-orb{right:8%;top:22%;width:clamp(50px,6vw,92px)}
+.ambient--welcome .ambient-ring{right:19%;bottom:12%}
+.ambient--welcome .bead-one{right:30%;top:23%}.ambient--welcome .bead-two{right:8%;bottom:31%}
+.ambient--person .ambient-orb{right:4%;top:12%;width:clamp(62px,7vw,108px)}
+.ambient--person .ambient-petal{right:2%;bottom:7%;width:70px;height:105px}
+.ambient--person .bead-one{right:17%;top:39%}.ambient--person .bead-two{right:9%;bottom:24%}
+.ambient--qualifications .ambient-ring{right:3%;top:5%;width:clamp(72px,9vw,125px)}
+.ambient--qualifications .ambient-orb{right:8%;bottom:8%;width:68px}
+.ambient--qualifications .bead-one{right:18%;top:25%}.ambient--qualifications .bead-two{right:5%;top:44%}
+.ambient--offer .ambient-orb{right:7%;top:7%;width:clamp(76px,9vw,130px)}
+.ambient--offer .ambient-petal{right:2%;bottom:6%;width:74px;height:106px}
+.ambient--offer .bead-one{right:21%;top:30%}.ambient--offer .bead-two{right:9%;bottom:26%}.ambient--offer .bead-three{right:30%;bottom:14%}
+.ambient--family .ambient-ring{left:6%;top:16%;width:clamp(82px,10vw,140px)}
+.ambient--family .ambient-orb{right:3%;bottom:8%;width:70px}
+.ambient--family .bead-one{left:18%;top:38%}.ambient--family .bead-two{right:13%;top:17%}
+.ambient--contact .ambient-orb{left:3%;top:17%;width:clamp(68px,8vw,118px)}
+.ambient--contact .ambient-ring{right:2%;bottom:13%;width:clamp(75px,9vw,132px)}
+.ambient--contact .bead-one{left:17%;bottom:18%}.ambient--contact .bead-two{right:18%;top:21%}
+@media(max-width:760px){
+ .ambient--hero .ambient-orb{right:-2%;top:18%;width:80px;opacity:.54}
+ .ambient--hero .ambient-ring{right:0;top:56%;width:94px;opacity:.45}
+ .ambient--hero .ambient-petal{display:none}
+ .ambient--welcome .ambient-orb,.ambient--person .ambient-orb,.ambient--offer .ambient-orb,.ambient--contact .ambient-orb{width:54px;opacity:.5}
+ .ambient--person .ambient-petal,.ambient--offer .ambient-petal{display:none}
+ .ambient--qualifications .ambient-ring{width:60px}
+ .ambient--family .ambient-ring{width:70px}
+}
+@media(prefers-reduced-motion:reduce){.ambient-shape,.ambient-bead{animation:none!important;will-change:auto;transform:none!important}}
