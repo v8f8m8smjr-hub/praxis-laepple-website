@@ -111,3 +111,43 @@ section{scroll-margin-top:5rem}
  .reveal-ready [data-reveal]{opacity:1;transform:none;clip-path:none}
  .hero::before,.hero::after,.welcome::after,.person-section::before,.offer-section::before,.family-section::after,.contact-section::before{transform:none}
 }
+
+
+/* Finishing pass: warmer composition, clearer contrast, quicker reading rhythm. */
+:root{
+ --sage:#d4d2c5;
+ --paper:#fbf8f2;
+ --paper-dark:#f1e6d9;
+ --ink:#4d3f38;
+ --ink-soft:#625149;
+ --muted:#6c5a50;
+ --line:#d9c9bb;
+}
+.welcome::after{
+ right:7%;top:13%;width:min(19vw,225px);height:min(29vw,330px);aspect-ratio:auto;
+ border-radius:48% 48% 5px 5px;
+ background:linear-gradient(165deg,rgba(234,217,170,.58),rgba(226,180,158,.5));
+ box-shadow:inset 0 0 0 8px rgba(255,253,249,.48);
+}
+.offer-section{
+ background:linear-gradient(125deg,#f3e7d9 0%,#f6eee5 48%,#ead8c9 100%);
+}
+.offer-section::before{
+ background:linear-gradient(138deg,rgba(255,253,249,.68),rgba(226,180,158,.32));
+}
+.offer-section .section-kicker,.offer-section .section-kicker span,
+.offer-section .offer-layout>div:first-child>p:not(.eyebrow),
+.offer-section .offer-layout .muted{color:#55463e!important}
+.site-footer{background:linear-gradient(112deg,#e5cfbb,#f1dfd0);color:#493c35}
+.site-footer .footer-brand .brand-copy small,.site-footer .footer-main>p,
+.site-footer .footer-bottom,.site-footer .footer-bottom a,.site-footer .footer-top{color:#493c35}
+.reveal-ready [data-reveal]{
+ transition:opacity .48s cubic-bezier(.22,.68,0,1),transform .48s cubic-bezier(.22,.68,0,1);
+ transition-delay:var(--reveal-delay,0ms);
+}
+.reveal-ready [data-reveal="image"]{
+ transition:opacity .62s ease,transform .62s cubic-bezier(.2,.7,.2,1),clip-path .68s cubic-bezier(.2,.7,.2,1);
+}
+@media(max-width:760px){
+ .welcome::after{width:30vw;height:48vw;right:-4%;top:10%;opacity:.6}
+}
