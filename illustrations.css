@@ -388,3 +388,6 @@ body{color:var(--ink)}
 /* Keep the portrait fully clear; the foreground form floats in the side gap. */
 .person-visual::after{right:-105px}
 @media(max-width:760px){.person-visual::after{right:-58px}}
+
+/* Keep the portrait image edge fully unobstructed. */
+.person-visual::after{display:none!important}
