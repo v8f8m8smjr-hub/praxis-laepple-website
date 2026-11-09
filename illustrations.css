@@ -427,3 +427,45 @@ body{color:var(--ink)}
 .ambient-bead.bead-three{display:none!important}
 .qualification-extras{border-block:1px solid var(--line);padding-block:20px}
 .qualification-extras .additional-qualifications ul{border:0!important}
+
+/* Full-bleed section fields: content stays centered, the background reaches the viewport edges. */
+body{overflow-x:hidden}
+.hero,.welcome,.process-section{overflow:visible!important;background:transparent!important;isolation:isolate}
+.hero::before{
+  content:""!important;display:block!important;position:absolute;z-index:-1;
+  top:0;bottom:0;left:50%;right:auto;width:100vw;height:auto;min-height:0;
+  border:0;border-radius:0;box-shadow:none;transform:translateX(-50%)!important;
+  background:
+    radial-gradient(ellipse at 80% 18%,rgba(233,202,181,.58),transparent 42%),
+    linear-gradient(112deg,#fbf8f2 0%,#f7eee5 54%,#f3e5d9 100%);
+  pointer-events:none;will-change:auto
+}
+.hero::after{opacity:.22!important;filter:blur(17px)!important;border:0!important;box-shadow:none!important}
+.welcome::before{
+  content:""!important;display:block!important;position:absolute;z-index:-1;
+  top:0;bottom:0;left:50%;right:auto;width:100vw;height:auto;
+  transform:translateX(-50%)!important;opacity:1!important;pointer-events:none;
+  background-image:
+    radial-gradient(circle at 18% 28%,rgba(255,255,255,.82) 0 2px,transparent 3px),
+    radial-gradient(circle at 64% 74%,rgba(226,180,158,.3) 0 2px,transparent 3px),
+    radial-gradient(circle at 86% 22%,rgba(194,203,184,.36) 0 3px,transparent 4px),
+    linear-gradient(180deg,#fbf8f2 0%,#f7f0e7 100%);
+  background-size:100% 100%;animation:light-drift 42s ease-in-out infinite alternate
+}
+.process-section{position:relative}
+.process-section::before{
+  content:"";display:block;position:absolute;z-index:-1;
+  top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);
+  background:linear-gradient(180deg,#fbf8f2 0%,#f7f1e8 100%);
+  pointer-events:none
+}
+/* Soft cloud mark replaces the former shaded sphere behind KL. */
+.brand-mark::before{display:none!important}
+.brand-mark svg{display:block!important;position:absolute;inset:2px auto auto 50%;transform:translateX(-50%);width:42px;height:31px;overflow:visible;fill:none;stroke:none}
+.brand-mark svg .cloud-shadow{fill:#bd927b;stroke:none;opacity:.25;filter:blur(1.4px)}
+.brand-mark svg .cloud-body{fill:#e9cbb8;stroke:none}
+.brand-mark svg .cloud-glint{fill:none;stroke:rgba(255,253,249,.58);stroke-width:1.35;stroke-linecap:round}
+.brand-initials{z-index:2;position:absolute;left:50%;top:50%;transform:translate(-50%,-52%);color:#574a43}
+@media(max-width:760px){
+  .hero::before,.welcome::before,.process-section::before{width:100vw;left:50%;right:auto}
+}
