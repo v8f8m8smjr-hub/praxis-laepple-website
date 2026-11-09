@@ -9,3 +9,25 @@
 .offer-section .offer-card h3{color:var(--ink)}
 .site-footer{background:#e8dccb;color:var(--ink)}
 .site-footer a{color:var(--ink)}
+
+/* Responsive copy and full-width warm section fields */
+@media(max-width:1000px){
+  .value-grid article{display:block;min-width:0}
+  .value-grid h3{margin:0 0 5px}
+  .value-grid p{max-width:38rem;line-height:1.65}
+}
+.hero,.welcome{isolation:isolate}
+.hero::before,.welcome::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);pointer-events:none}
+.hero::before{background:linear-gradient(120deg,#f7e9df 0%,#f5e8df 48%,#f9eee4 100%)}
+.welcome::before{background:linear-gradient(180deg,#fbf8f2 0%,#f7f0e7 100%)}
+.hero-copy,.hero-bottom{padding-inline:clamp(20px,4vw,64px)}
+.hero-copy{max-width:760px}
+.hero-actions .text-link{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;border-bottom:0;position:relative;padding-bottom:8px}
+.hero-actions .text-link::after{content:"";position:absolute;left:0;right:0;bottom:5px;height:1px;background:#b99b8d}
+.brand-mark{isolation:isolate}
+.brand-mark svg{display:none}
+.brand-mark::before{content:"";position:absolute;z-index:0;inset:2px;border-radius:50%;background:radial-gradient(circle at 31% 27%,#f1dfd1 0%,#d4b49b 48%,#b98f75 100%);filter:blur(1.2px);opacity:.8;box-shadow:0 5px 14px rgba(151,108,83,.19)}
+.brand-initials{z-index:1;color:#574a43}
+.qualification-extras{border-block:1px solid var(--line);padding-block:20px;margin-top:28px}
+.qualification-extras .additional-qualifications ul{border:0;margin:0;padding:0}
+@media(max-width:760px){.hero-copy,.hero-bottom{padding-inline:0}}
