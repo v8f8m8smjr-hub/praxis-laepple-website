@@ -498,3 +498,31 @@ body{overflow-x:hidden}
     transform:none!important;
   }
 }
+
+/* Einzelne, ruhig verteilte Kugeln ohne verschachtelte Glanzflächen. */
+.ambient-orb{
+  background:linear-gradient(145deg,#fffdf9 0%,#eed2c0 36%,#d79a80 72%,#a65f4d 100%)!important;
+  box-shadow:inset 7px 8px 16px rgba(255,255,255,.44),inset -12px -14px 22px rgba(106,63,50,.2),0 18px 30px rgba(87,74,67,.13);
+}
+.ambient-orb--sage{background:linear-gradient(145deg,#fffdf9 0%,#dbe0d1 38%,#a7b59c 73%,#71816e 100%)!important}
+.ambient-orb--sand{background:linear-gradient(145deg,#fffdf9 0%,#f2e5d4 38%,#d3b391 73%,#9c7457 100%)!important}
+/* Große Farbwolken hinter Kugeln entfallen, damit jede Form für sich steht. */
+.ambient-sculpture{display:none!important}
+/* Kugeln und Ringe bekommen getrennte, gleichmäßigere Plätze. */
+.ambient--hero .ambient-orb{right:12%;top:16%}
+.ambient--hero .ambient-ring{right:43%;top:58%}
+.ambient--hero .ambient-petal{right:5%;top:59%}
+.ambient--welcome .ambient-orb{right:8%;top:16%}
+.ambient--person .ambient-orb{right:6%;top:12%}
+.ambient--person .ambient-petal{right:4%;bottom:8%}
+.ambient--qualifications .ambient-ring{right:6%;top:5%}
+.ambient--qualifications .ambient-orb{right:29%;bottom:7%}
+.ambient--offer .ambient-orb{right:7%;top:9%}
+.ambient--family .ambient-orb{right:8%;bottom:10%}
+.ambient--contact .ambient-orb{left:7%;top:15%}
+@media(max-width:760px){
+  .ambient--hero .ambient-orb{right:7%;top:15%}
+  .ambient--hero .ambient-ring{right:40%;top:59%}
+  .ambient--qualifications .ambient-ring{right:7%;top:5%;width:60px}
+  .ambient--qualifications .ambient-orb{right:27%;bottom:7%;width:54px}
+}
