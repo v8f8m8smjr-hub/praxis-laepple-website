@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">Praxis Läpple – sanfte Wolke mit KL</title><desc id="d">Weiche pastellfarbene 3D-Wolke hinter den Initialen KL, darunter Praxis Läpple in Waiblingen.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbf8f2"/><stop offset="1" stop-color="#f2e7dd"/></linearGradient>
+ <radialGradient id="cloud" cx="34%" cy="24%" r="78%"><stop stop-color="#fff8f0"/><stop offset=".31" stop-color="#f1ddcf"/><stop offset=".66" stop-color="#dfbca6"/><stop offset="1" stop-color="#c9987e"/></radialGradient>
+ <radialGradient id="cloudLight" cx="35%" cy="15%" r="75%"><stop stop-color="#fffdf9" stop-opacity=".68"/><stop offset="1" stop-color="#fffdf9" stop-opacity="0"/></radialGradient>
+ <filter id="soft" x="-20%" y="-30%" width="140%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="shadow" x="-20%" y="-30%" width="140%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+ <path id="cloudShape" d="M321 316c-48 0-87-37-87-83 0-44 34-80 78-83 17-74 82-128 162-128 75 0 137 47 159 114 12-4 25-6 38-6 72 0 130 56 130 126 0 69-58 125-130 125H321z"/>
+</defs>
+<rect width="1200" height="630" fill="url(#paper)"/>
+<g transform="translate(0 0)">
+ <use href="#cloudShape" fill="#bd957c" opacity=".18" filter="url(#shadow)" transform="translate(0 18)"/>
+ <use href="#cloudShape" fill="url(#cloud)"/>
+ <use href="#cloudShape" fill="url(#cloudLight)"/>
+ <ellipse cx="507" cy="184" rx="78" ry="24" fill="#fffdf9" opacity=".22" filter="url(#soft)"/>
+</g>
+<text x="600" y="307" text-anchor="middle" font-family="Georgia,serif" font-size="142" font-weight="600" letter-spacing="-11" fill="#574a43">KL</text>
+<text x="600" y="493" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" letter-spacing="2" fill="#574a43">PRAXIS LÄPPLE</text>
+<text x="600" y="538" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" letter-spacing="1" fill="#74665d">KINDER- UND JUGENDLICHENPSYCHOTHERAPIE · WAIBLINGEN</text>
+</svg>
