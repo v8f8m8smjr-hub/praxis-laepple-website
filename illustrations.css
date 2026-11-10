@@ -664,3 +664,35 @@ body{overflow-x:hidden}
   .hero-actions .button{padding-inline:8px!important;font-size:10px!important}
   .hero-actions .hero-know-link{font-size:10px}
 }
+
+/* Final hero spacing: identical action type size, audience note in document flow. */
+@media(max-width:760px){
+  .hero{padding-bottom:64px!important}
+  .hero-actions{
+    grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)!important;
+    gap:10px!important
+  }
+  .hero-actions .button,
+  .hero-actions .hero-know-link{
+    font-size:clamp(11.5px,3.2vw,13px)!important
+  }
+  .hero-actions .button{min-height:50px}
+  .hero-actions .hero-know-link{line-height:1.35}
+  .hero-bottom{
+    position:relative!important;inset:auto!important;left:auto!important;right:auto!important;
+    bottom:auto!important;width:100%!important;margin:34px 0 0!important;
+    padding:0!important;border:0!important;
+    display:flex!important;align-items:flex-start!important;
+    justify-content:space-between!important;gap:18px!important;
+    font-size:11px!important;line-height:1.6;letter-spacing:.065em
+  }
+  .hero-bottom>span:first-child{flex:1 1 auto;max-width:62%}
+  .hero-bottom .scroll-cue{
+    flex:0 0 auto;max-width:35%;text-align:right;white-space:normal
+  }
+}
+@media(max-width:360px){
+  .hero-bottom{gap:12px!important;font-size:10px!important}
+  .hero-bottom>span:first-child{max-width:64%}
+  .hero-bottom .scroll-cue{max-width:34%}
+}
