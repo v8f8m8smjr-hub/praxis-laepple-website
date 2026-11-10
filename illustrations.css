@@ -526,3 +526,33 @@ body{overflow-x:hidden}
   .ambient--qualifications .ambient-ring{right:7%;top:5%;width:60px}
   .ambient--qualifications .ambient-orb{right:27%;bottom:7%;width:54px}
 }
+
+/* Final mobile refinements requested by Kai. */
+.hero-actions .text-link{
+  border:0!important;text-decoration:none!important;text-decoration-line:none!important;
+  background:none!important;background-image:none!important;box-shadow:none!important
+}
+.hero-actions .text-link::before,.hero-actions .text-link::after{
+  content:none!important;display:none!important
+}
+.degree-line{display:inline}
+.qualification-extras .additional-qualifications ul{
+  list-style:none!important;display:grid;gap:8px;margin:10px 0 0!important;padding:0!important
+}
+.qualification-extras .additional-qualifications li{
+  position:relative;padding:0 0 0 14px!important;background:transparent!important
+}
+.qualification-extras .additional-qualifications li::before{
+  content:"";position:absolute;left:1px;top:.72em;width:4px;height:4px;
+  border:1px solid var(--clay);border-radius:50%
+}
+@media(max-width:760px){
+  .welcome{padding-bottom:74px}
+  .value-grid{border-top:0!important;padding-top:0!important}
+  #person{
+    margin-top:-2px;border-top:0!important;
+    background:linear-gradient(180deg,#f7f0e7 0%,#f1e6da 14%,#ead9ca 100%)!important
+  }
+  #person::before{top:0}
+  .degree-line{display:block;white-space:nowrap}
+}
