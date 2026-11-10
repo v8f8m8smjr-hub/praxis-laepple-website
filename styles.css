@@ -36,3 +36,20 @@
 .brand-mark::before{display:none!important}
 .brand-mark .brand-logo{display:block;width:38px;height:38px;object-fit:contain;border-radius:0;position:relative;z-index:1;background:transparent}
 .qualification-extras{border:0;border-top:1px solid var(--line);padding-block:20px;margin-top:28px}
+/* Feinschliff: klare Übergänge, gut lesbare Links und ruhige Listen. */
+.welcome{border-bottom:0}
+#person{border-top:0}
+.hero-actions .text-link::after{display:none!important}
+.eyebrow-dot{display:none!important}
+.membership-note .membership-list{list-style:disc;margin:12px 0 0;padding-left:1.2rem}
+.membership-list li{padding:3px 0;color:var(--ink-soft);line-height:1.65}
+.additional-qualifications li{background:transparent!important;box-shadow:none}
+.qualification-head{align-items:center}
+.qualification-head h2{margin:0}
+.qualification-head>div .mini-label{display:none}
+@media(max-width:760px){
+ .offer-section{width:100vw;max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+ .offer-section>.section-shell{width:min(100% - 40px,560px);margin-inline:auto}
+ .membership-note .membership-list{padding-left:1.25rem}
+ .membership-list li+li{border-top:1px solid rgba(116,102,93,.16);margin-top:4px;padding-top:8px}
+}
