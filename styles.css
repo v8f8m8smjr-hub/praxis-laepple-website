@@ -73,3 +73,6 @@
  .contact-card dd a[href^="tel:"],.contact-card dd a[href^="mailto:"]{display:inline-flex;align-items:center;min-height:44px;padding-block:7px}
  .contact-card .form-download{min-height:56px}
 }
+
+/* M.A. bleibt als Abkürzung ausgezeichnet, aber ohne Browser-Punktlinie. */
+.degree-line abbr[title]{text-decoration:none;text-decoration-line:none;border-bottom:0}
