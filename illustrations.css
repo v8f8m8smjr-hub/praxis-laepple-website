@@ -557,3 +557,16 @@ body{overflow-x:hidden}
   .person-copy .eyebrow{display:block}
   .degree-line{display:block;white-space:nowrap}
 }
+
+/* Mobile cache-safe correction for the hero link and the right edge of the intro field. */
+.hero-actions a.text-link,.hero-actions a.text-link:link,.hero-actions a.text-link:visited{
+  text-decoration:none!important;text-decoration-line:none!important;
+  border:0!important;box-shadow:none!important;background-image:none!important
+}
+.hero-actions a.text-link::before,.hero-actions a.text-link::after{
+  display:none!important;content:none!important;background:none!important
+}
+@media(max-width:760px){
+  .welcome::after{display:none!important;content:none!important}
+  .welcome::before{left:0!important;right:auto!important;width:100vw!important;transform:none!important}
+}
