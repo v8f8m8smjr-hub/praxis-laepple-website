@@ -598,3 +598,27 @@ body{overflow-x:hidden}
   }
   .welcome::after{display:none!important;content:none!important}
 }
+
+/* Mobile hero actions: align both links; place a short underline below the text. */
+.hero-actions .hero-know-link{
+  position:relative!important;padding:8px 0 10px!important;
+  text-decoration:none!important;border:0!important
+}
+.hero-actions .hero-know-link::after{
+  content:""!important;display:block!important;position:absolute!important;
+  left:0!important;right:18px!important;bottom:2px!important;height:1px!important;
+  background:currentColor!important;opacity:.55
+}
+@media(max-width:760px){
+  .hero-actions{flex-wrap:nowrap!important;gap:clamp(8px,2.5vw,14px)!important}
+  .hero-actions .button{
+    flex:0 1 auto;min-width:0;white-space:nowrap;
+    padding:13px clamp(10px,3vw,17px);gap:clamp(8px,2.2vw,12px);
+    font-size:clamp(10px,3.05vw,12px)
+  }
+  .hero-actions .hero-know-link{
+    flex:0 0 auto;white-space:nowrap;font-size:clamp(10px,2.9vw,12px);
+    padding:8px 0 10px!important
+  }
+  .hero-bottom{border-top:0!important;padding-top:0!important}
+}
