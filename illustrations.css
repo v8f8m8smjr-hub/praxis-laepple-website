@@ -554,5 +554,6 @@ body{overflow-x:hidden}
     background:linear-gradient(180deg,#f7f0e7 0%,#f1e6da 14%,#ead9ca 100%)!important
   }
   #person::before{top:0}
+  .person-copy .eyebrow{display:block}
   .degree-line{display:block;white-space:nowrap}
 }
