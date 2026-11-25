@@ -665,6 +665,13 @@ body{overflow-x:hidden}
   .hero-actions .hero-know-link{font-size:10px}
 }
 
+.hero-actions{align-items:stretch}
+.hero-actions .button-outline{
+  background:#f4e9dc;
+  border:1px solid #a88978;
+  color:var(--ink)
+}
+.hero-actions .button-outline:hover{background:#ecddcd}
 .hero-specialty{
   margin:0 0 8px;
   color:var(--ink);
@@ -676,7 +683,8 @@ body{overflow-x:hidden}
 @media(max-width:760px){
   .hero{padding-bottom:48px!important}
   .hero-actions{
-    grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    align-items:stretch;
     gap:10px!important
   }
   .hero-actions .button,
