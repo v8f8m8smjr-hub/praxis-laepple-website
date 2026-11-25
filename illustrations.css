@@ -701,3 +701,12 @@ body{overflow-x:hidden}
   }
   .hero-bottom{display:none!important}
 }
+
+.contact-card .contact-directions{
+  display:block;
+  margin-top:5px;
+  color:var(--ink-soft);
+  font-size:13px;
+  font-weight:400;
+  line-height:1.45
+}
