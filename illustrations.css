@@ -710,3 +710,28 @@ body{overflow-x:hidden}
   font-weight:400;
   line-height:1.45
 }
+
+.welcome.welcome-compact{padding-block:clamp(32px,5vw,64px)}
+.person-layout:has(.career-details){row-gap:24px}
+.career-details{grid-column:1/-1;min-width:0;border-block:1px solid var(--line)}
+.career-details summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  min-height:52px;
+  padding:12px 0;
+  cursor:pointer;
+  list-style:none;
+  color:var(--ink);
+  font-weight:650;
+  scroll-margin-top:100px
+}
+.career-details summary::-webkit-details-marker{display:none}
+.career-details summary::after{content:"+";font-size:22px;color:var(--coral)}
+.career-details[open] summary::after{content:"−"}
+.career-details summary:focus-visible{outline:2px solid var(--coral);outline-offset:4px}
+.career-details .when-open,.career-details[open] .when-closed{display:none}
+.career-details[open] .when-open{display:inline}
+.career-details .membership-note{margin-block:16px}
+.reveal-ready .career-details [data-reveal]{opacity:1;transform:none;transition:none}
