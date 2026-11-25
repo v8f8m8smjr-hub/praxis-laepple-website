@@ -684,10 +684,12 @@ body{overflow-x:hidden}
     font-size:clamp(11.5px,3.2vw,13px)!important
   }
   .hero-actions .button{min-height:50px}
-  .hero-actions .hero-know-link{line-height:1.35}
+  .hero-actions .button,
+  .hero-actions .hero-know-link{white-space:normal}
+  .hero-actions .hero-know-link{
+    display:block;
+    max-width:100%;
+    line-height:1.35
+  }
   .hero-bottom{display:none!important}
-}
-@media(max-width:400px){
-  .hero-actions{grid-template-columns:1fr!important;justify-items:start}
-  .hero-actions .button{width:auto}
 }
