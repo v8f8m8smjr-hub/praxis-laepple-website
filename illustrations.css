@@ -666,6 +666,14 @@ body{overflow-x:hidden}
 }
 
 .hero-actions{align-items:stretch}
+@media(min-width:761px){
+  .hero-actions{
+    display:inline-grid;
+    grid-auto-flow:column;
+    grid-auto-columns:1fr;
+    max-width:100%
+  }
+}
 .hero-actions .button-outline{
   background:#f4e9dc;
   border:1px solid #a88978;
