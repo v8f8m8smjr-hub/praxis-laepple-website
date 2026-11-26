@@ -35,23 +35,26 @@
     .page-color-field {
       background:
         radial-gradient(ellipse 65% 560px at 80% 120px, rgba(233,202,181,.46), transparent 74%),
-        radial-gradient(ellipse 90% var(--taupe-spread, 1050px) at 9% var(--taupe-center, 24%), rgba(202,184,162,.50), transparent 78%),
+        radial-gradient(ellipse 90% var(--taupe-spread, 1050px) at 9% var(--taupe-center, 24%), rgba(210,189,167,.66), transparent 78%),
         radial-gradient(ellipse 87% var(--copper-spread, 1250px) at 95% var(--copper-center, 75%), rgba(224,181,155,.39), transparent 80%),
-        linear-gradient(90deg,#fbf8f2 0%,#f7f0e8 55%,#f3e9df 100%);
+        linear-gradient(90deg,#fbf6ed 0%,#f4e8d8 55%,#e9dbc7 100%);
     }
     .page-color-field #main > section, .page-color-field > .site-footer { background: transparent !important; }
     #main > .hero::before, #main > .process-section::before { background: none !important; }
     #main > .welcome::after { content: none !important; }
+    #start .ambient--hero .ambient-orb { opacity: .53 !important; }
+    #start .ambient--hero .ambient-ring { opacity: .32 !important; }
+    #start .ambient--hero .ambient-petal { opacity: .38 !important; }
     @media (prefers-reduced-motion: no-preference) {
-      #start .ambient-sculpture { animation: hero-sculpture-drift 29s ease-in-out infinite alternate; }
-      #start .ambient--hero .ambient-orb { animation-duration: 15s; }
-      #start .ambient--hero .ambient-ring { animation-duration: 21s; }
-      #start .ambient--hero .ambient-petal { animation-duration: 18s; }
+      #start .ambient-sculpture { animation: hero-sculpture-drift 24s ease-in-out infinite alternate; }
+      #start .ambient--hero .ambient-orb { animation-duration: 12s; }
+      #start .ambient--hero .ambient-ring { animation-duration: 17s; }
+      #start .ambient--hero .ambient-petal { animation-duration: 15s; }
     }
     @keyframes hero-sculpture-drift {
       0% { border-radius: 63% 37% 49% 51% / 44% 45% 55% 56%; transform: translate3d(0, 0, 0) rotate(-5deg) scale(.98); }
-      50% { border-radius: 43% 57% 58% 42% / 56% 39% 61% 44%; transform: translate3d(10px, 16px, 18px) rotate(1deg) scale(1.02); }
-      100% { border-radius: 55% 45% 39% 61% / 42% 59% 41% 58%; transform: translate3d(22px, -14px, 0) rotate(7deg) scale(1.04); }
+      50% { border-radius: 43% 57% 58% 42% / 56% 39% 61% 44%; transform: translate3d(16px, 24px, 18px) rotate(1deg) scale(1.03); }
+      100% { border-radius: 55% 45% 39% 61% / 42% 59% 41% 58%; transform: translate3d(35px, -22px, 0) rotate(9deg) scale(1.06); }
     }
     #main > .welcome::before {
       background-image:
@@ -80,6 +83,10 @@
     #kontakt .contact-downloads { margin-top: 0; min-width: 0; }
     #kontakt .contact-downloads .form-download small { justify-self: end; text-align: right; font-size: 11px; }
     .contact-downloads > h3 { margin: 0 0 12px; font-size: clamp(20px, 3vw, 26px); }
+    #krisenhilfe .crisis-note > div {
+      background: linear-gradient(115deg, #f3e8d9, #e9dbc7);
+      border-left-color: #ae7158;
+    }
     .crisis-section .crisis-priority { padding-bottom: 10px; border-bottom: 1px solid var(--line); }
     .crisis-section .crisis-priority p { margin: 0 0 8px; font-size: 14px; }
     .crisis-section .crisis-audiences .crisis-local { padding-top: 5px; border-top: 1px solid var(--line); }
