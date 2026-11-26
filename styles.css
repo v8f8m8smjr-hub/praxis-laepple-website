@@ -77,3 +77,37 @@
 
 /* M.A. bleibt als Abkürzung ausgezeichnet, aber ohne Browser-Punktlinie. */
 .degree-line abbr[title]{text-decoration:none;text-decoration-line:none;border-bottom:0}
+
+/* Shared heading hierarchy */
+main#main h1,
+main#main section h2,
+main.legal-document h1,
+.legal-document h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  color: #4e3b32;
+  text-wrap: balance;
+}
+main#main section h2 { font-size: clamp(31px, 5vw, 57px); }
+main#main h1 em, main#main section h2 em { color: #84513d; font-style: italic; }
+main#main .section-kicker,
+main#main .section-kicker span {
+  color: #84513d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+main#main section .eyebrow {
+  color: #574338;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .015em;
+  text-transform: none;
+}
+main#main #person .person-intro .section-kicker,
+main#main #kontakt .contact-layout > div:first-child .section-kicker { margin-bottom: 10px; }
+main#main #person .person-intro .eyebrow,
+main#main #kontakt .contact-layout > div:first-child .eyebrow { margin-top: 0; margin-bottom: 20px; }
