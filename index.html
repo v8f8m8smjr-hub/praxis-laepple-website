@@ -31,6 +31,18 @@
   <link rel="stylesheet" href="styles.css?v=20261125c">
   <link rel="stylesheet" href="image-styles.css?v=20261110f">
   <link rel="stylesheet" href="illustrations.css?v=20261126-ersttermin">
+  <style>
+    .person-copy .person-bio p { font-size: 14px; color: var(--ink-soft); line-height: 1.9; }
+    @media (max-width: 760px) {
+      #person .person-copy { display: contents; }
+      #person .person-intro { grid-area: 1 / 1; }
+      #person .person-visual { grid-area: 2 / 1; }
+      #person .person-bio { grid-area: 3 / 1; }
+      #person .career-details { grid-area: 4 / 1; }
+      #person .person-intro .section-kicker { margin-bottom: 12px; }
+      #person .person-intro .eyebrow { margin-bottom: 0; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -88,7 +100,7 @@
           <img class="person-image person-image-classic" src="images/kai-laepple-portrait.jpg" alt="Kai Läpple, klassisches Porträt" loading="lazy" decoding="async">
           -->
         </div>
-        <div class="person-copy"><div class="section-kicker"><span>Meine Person</span></div><p class="eyebrow"><span>Kai Läpple · Jahrgang 1996</span><span class="degree-line"><abbr title="Master of Arts">M.A.</abbr> Sozialpädagogik</span></p><h2>Approbierter Kinder- und Jugendlichenpsychotherapeut</h2><p>Seit Oktober 2026 bin ich approbierter Kinder- und Jugendlichenpsychotherapeut und arbeite verhaltenstherapeutisch. Klinische Erfahrung habe ich im ZfP Weinsberg und in der Tagesklinik Winnenden gesammelt. Ich arbeite in einer Gemeinschaftspraxis mit meiner Mutter Dietgard Läpple, Psychologischer Psychotherapeutin.</p></div>
+        <div class="person-copy"><div class="person-intro"><div class="section-kicker"><span>Meine Person</span></div><p class="eyebrow"><span>Kai Läpple · Jahrgang 1996</span><span class="degree-line"><abbr title="Master of Arts">M.A.</abbr> Sozialpädagogik</span></p></div><div class="person-bio"><h2>Approbierter Kinder- und Jugendlichenpsychotherapeut</h2><p>Seit Oktober 2026 bin ich approbierter Kinder- und Jugendlichenpsychotherapeut und arbeite verhaltenstherapeutisch. Klinische Erfahrung habe ich im ZfP Weinsberg und in der Tagesklinik Winnenden gesammelt. Ich arbeite in einer Gemeinschaftspraxis mit meiner Mutter Dietgard Läpple, Psychologischer Psychotherapeutin.</p></div></div>
         <details class="career-details">
           <summary id="qualifikation"><span class="when-closed">Beruflichen Werdegang anzeigen</span><span class="when-open">Beruflichen Werdegang ausblenden</span></summary>
       <div class="timeline">
@@ -109,9 +121,9 @@
 
     <section class="family-section" id="informationen">
       <div class="ambient-composition ambient--family" aria-hidden="true"><span class="ambient-shape ambient-ring ambient-ring--small"></span><span class="ambient-shape ambient-orb ambient-orb--peach"></span><i class="ambient-bead bead-one"></i><i class="ambient-bead bead-two"></i></div><div class="section-shell section-pad family-layout"><div class="section-kicker"><span>Für Eltern &amp; Jugendliche</span></div><div class="family-content"><p class="eyebrow">Fragen sind willkommen</p><h2>Ein guter Anfang darf<br>auch aus Fragen bestehen.</h2><div class="family-questions">
-          <details class="site-disclosure"><summary>Kann ich mich selbst melden?</summary><p>Ja. Du kannst mich anrufen oder mir eine E-Mail schreiben. Wer beim ersten Gespräch dabei sein soll, klären wir bei der Terminvereinbarung.</p></details>
-          <details class="site-disclosure"><summary>Was bleibt vertraulich?</summary><p>Was du im Gespräch erzählst, behandle ich vertraulich. Wir besprechen, was mit Eltern oder Sorgeberechtigten geteilt werden kann. Wenn du oder jemand anderes akut gefährdet ist, kann es nötig sein, weitere Hilfe einzubeziehen.</p></details>
-          <details class="site-disclosure"><summary>Wer kommt zum ersten Gespräch mit?</summary><p>Das hängt vom Alter und vom Anliegen ab. Bei der Terminvereinbarung besprechen wir, ob eine sorgeberechtigte Person mitkommen soll und ob ein Teil des Gesprächs allein stattfinden kann.</p></details>
+          <details class="site-disclosure"><summary>Kann ich mich als Jugendliche oder Jugendlicher selbst melden?</summary><p>Ja. Du kannst anrufen oder per E-Mail nach einem Erstgespräch fragen. Für die Anfrage reichen Dein Name und eine Rückrufmöglichkeit. Was Dich beschäftigt, kannst Du in Ruhe im Gespräch erzählen.</p></details>
+          <details class="site-disclosure"><summary>Was bleibt vertraulich?</summary><p>Was Du mir erzählst, behandle ich vertraulich. Wenn es sinnvoll ist, Deine Eltern einzubeziehen, besprechen wir, was sie erfahren sollen. Bei akuter Gefahr für Dich oder andere kann es nötig sein, Hilfe dazuzuholen.</p></details>
+          <details class="site-disclosure"><summary>Wer kommt zum ersten Gespräch mit?</summary><p>Bei der Terminvereinbarung klären wir, wer mitkommt. Im Gespräch können Eltern ihre Beobachtungen schildern. Jugendliche können auch einen Teil des Gesprächs allein mit mir führen.</p></details>
         </div></div></div></section>
 
     <section class="contact-section" id="kontakt">
