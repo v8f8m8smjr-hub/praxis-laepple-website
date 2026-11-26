@@ -32,41 +32,17 @@
   <link rel="stylesheet" href="image-styles.css?v=20261110f">
   <link rel="stylesheet" href="illustrations.css?v=20261126-ersttermin">
   <style>
-    .welcome .welcome-story { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 16px; }
+    .welcome .welcome-story {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) clamp(92px, 11.5vw, 145px);
+      align-items: center;
+      gap: clamp(10px, 1.8vw, 22px);
+    }
     .welcome .welcome-story p { margin-bottom: 0; }
-    .welcome-faces { display: flex; align-items: center; gap: 5px; padding: 8px 2px; }
-    .welcome-face {
-      --clay-light: #f0dbc6; --clay-base: #d8af91; --clay-shade: #b27f65; --tilt: -10deg;
-      position: relative; display: block; width: 40px; height: 45px;
-      border-radius: 45% 53% 49% 46% / 49% 42% 54% 51%;
-      background: radial-gradient(ellipse at 30% 23%, var(--clay-light), var(--clay-base) 63%, var(--clay-shade));
-      box-shadow: inset 1px 1px 3px #fff8ef66, inset -2px -2px 5px #68473724, 1px 4px 6px #68473729;
-      transform: rotate(var(--tilt));
-    }
-    .welcome-face--thoughtful { --clay-light: #f5e9cd; --clay-base: #dac69f; --clay-shade: #b29a74; --tilt: 5deg; margin-top: 13px; }
-    .welcome-face--worried { --clay-light: #f1d5cd; --clay-base: #d9aaa0; --clay-shade: #b47e76; --tilt: 10deg; }
-    .welcome-face::before {
-      content: ""; position: absolute; left: 24%; top: 38%; width: 12%; aspect-ratio: 1;
-      border-radius: 50%; background: #584036; box-shadow: 15px 1px 0 #584036;
-    }
-    .welcome-face::after {
-      content: ""; position: absolute; left: 36%; top: 55%; width: 27%; height: 19%;
-      border-bottom: 2px solid #68473c; border-radius: 0 0 65% 65%;
-    }
-    .welcome-face--thoughtful::after { width: 20%; left: 47%; top: 53%; border-radius: 30%; transform: rotate(-8deg); }
-    .welcome-face--worried::after { top: 63%; border: 0; border-top: 2px solid #68473c; border-radius: 60% 60% 0 0; }
-    @media (prefers-reduced-motion: no-preference) {
-      .welcome-face { animation: welcome-face-float 7s ease-in-out infinite alternate; }
-      .welcome-face--thoughtful { animation-delay: -3s; }
-      .welcome-face--worried { animation-delay: -5s; }
-    }
-    @keyframes welcome-face-float {
-      from { transform: translateY(2px) rotate(var(--tilt)); }
-      to { transform: translateY(-3px) rotate(calc(var(--tilt) + 4deg)); }
-    }
+    .welcome-sketches { display: block; width: 100%; height: auto; overflow: visible; }
     @media (max-width: 760px) {
-      .welcome .welcome-story { grid-template-columns: 1fr; gap: 2px; }
-      .welcome-faces { justify-self: end; }
+      .welcome .welcome-story { grid-template-columns: 1fr; gap: 7px; }
+      .welcome-sketches { width: 105px; justify-self: end; }
     }
     #site-nav a:not(.nav-contact) {
       position: relative;
@@ -188,11 +164,6 @@
         radial-gradient(circle at 86% 22%,rgba(194,203,184,.36) 0 3px,transparent 4px) !important;
     }
     #main > .person-section, #main > .crisis-section { border-top: 0 !important; }
-    #main .ambient--margin { display: none; }
-    @media (min-width: 1380px) {
-      #main .ambient--margin { display: block; inset: 0 -96px; z-index: -1; }
-      #main .ambient--process-margin .ambient-shape { right: 20px; top: 13%; width: 46px; opacity: .46; }
-    }
     .person-copy .person-bio p { font-size: 14px; color: var(--ink-soft); line-height: 1.9; }
     @media (max-width: 760px) {
       #person .person-copy { display: contents; }
@@ -266,7 +237,33 @@
     <section class="welcome welcome-compact section-shell section-pad" aria-labelledby="welcome-title">
       <div class="ambient-composition ambient--welcome" aria-hidden="true"><span class="ambient-shape ambient-orb ambient-orb--sage"></span><span class="ambient-shape ambient-ring ambient-ring--small"></span><i class="ambient-bead bead-one"></i><i class="ambient-bead bead-two"></i></div>
       <div class="section-kicker"><span>Worum es geht</span></div>
-      <div class="welcome-content"><h2 id="welcome-title">Jeder Mensch bringt<br>seine eigene Geschichte mit.</h2><div class="welcome-story"><p>Wenn Sorgen, Konflikte oder Veränderungen den Alltag schwer machen, schauen wir gemeinsam darauf, was im Alltag belastet und was helfen kann.</p><div class="welcome-faces" aria-hidden="true"><span class="welcome-face"></span><span class="welcome-face welcome-face--thoughtful"></span><span class="welcome-face welcome-face--worried"></span></div></div></div>
+      <div class="welcome-content"><h2 id="welcome-title">Jeder Mensch bringt<br>seine eigene Geschichte mit.</h2><div class="welcome-story"><p>Wenn Sorgen, Konflikte oder Veränderungen den Alltag schwer machen, schauen wir gemeinsam darauf, was im Alltag belastet und was helfen kann.</p><svg class="welcome-sketches" aria-hidden="true" focusable="false" viewBox="0 0 162 129" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="#4f3b34" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <g transform="translate(13 8) rotate(-10 31 38)">
+              <path fill="#c78069" stroke="none" d="M16 30Q31 26 45 33L51 54Q45 61 13 56L11 43Z"/>
+              <path fill="none" d="M15 35Q7 32 4 19M43 35Q55 31 57 20M21 57L18 74L10 75M39 58L44 73L52 73"/>
+              <path fill="#efd8b0" d="M21 20Q19 10 30 8Q40 7 41 18Q42 29 31 31Q23 30 21 20Z"/>
+              <path fill="#4f3b34" stroke="none" d="M20 19Q15 7 27 5Q35 3 42 12L40 17Q34 12 30 14Q26 18 20 19Z"/>
+              <path fill="none" d="M27 20h.1m8-1h.1m-7 5q3 3 6-1"/>
+              <path stroke="#f6ddbf" d="M19 43l4 4m9-6l-2 6m9-3 3 5m-17 2-3 2"/>
+            </g>
+            <g transform="translate(89 34) rotate(8 25 39)">
+              <path fill="#7e9796" stroke="none" d="M13 34Q22 27 36 32L45 55Q38 61 9 55Z"/>
+              <path fill="none" d="M13 37q-6 13 8 15m18-14q8 10-2 13M18 56l-4 16-9 1m26-16 8 15 8-2"/>
+              <path fill="#d8a080" d="M17 19Q15 9 24 7Q37 6 39 18Q38 30 29 31Q21 30 17 19Z"/>
+              <path fill="#55433b" stroke="none" d="M16 18Q11 8 21 5L20 1Q29-3 31 4Q40 5 40 16L36 17Q33 11 27 12Q23 15 16 18Z"/>
+              <path fill="none" d="M23 19h.1m9 0h.1m-7 6q3-2 6 0"/>
+              <path stroke="#e8ddc5" d="M22 35l-2 5m10-6-1 6m6 3 3 4m-12-3-1 5"/>
+            </g>
+            <g transform="translate(52 90) rotate(-7 22 15)">
+              <path fill="#d5ad62" d="M4 19Q1 12 8 8L8 2L16 9Q26 7 34 13L42 15Q42 22 34 23L11 24Z"/>
+              <path fill="none" d="M10 23l-1 7m19-7 1 6M4 17q-6 0-3-7m33 7h.1m-13-3h.1"/>
+              <path stroke="#9c753e" d="M13 16l2 4m11-6 2 4"/>
+            </g>
+            <path fill="none" stroke="#ad735b" d="M78 12l2 6m-9 1 5 2m66 57 7-3m-5 10 5 2"/>
+            <path fill="none" stroke="#a58c67" d="M14 101l3 4m-7 3 4 1m114 8 5-4"/>
+          </g>
+        </svg></div></div>
     </section>
 
     <section class="offer-section" id="angebot">
@@ -276,7 +273,7 @@
         <article class="offer-card matte-surface"><h3>Bezugspersonen gezielt einbeziehen</h3><p>In Gesprächen mit Eltern oder anderen Bezugspersonen können wir zum Beispiel erarbeiten, wie sie bei Schulangst oder Konflikten zu Hause unterstützen. Welche Gespräche sinnvoll sind und welche Inhalte vertraulich bleiben, klären wir gemeinsam.</p></article>
       </div></div></section>
 
-    <section class="section-shell section-pad process-section" id="ablauf"><div class="ambient-composition ambient--margin ambient--process-margin" aria-hidden="true"><span class="ambient-shape ambient-orb ambient-orb--sage"></span></div><div class="section-kicker"><span>Ablauf</span></div><div class="process-heading"><h2>Schritt für Schritt.</h2><p>Vom ersten Kontakt bis zur gemeinsamen Entscheidung über eine Behandlung.</p></div><div class="process-steps"><article><span>01</span><h3>Kontakt aufnehmen</h3><p>Rufen Sie zu den Telefonzeiten an oder schreiben Sie eine E-Mail. Wir vereinbaren einen Termin für das erste Gespräch.</p></article><article><span>02</span><h3>Erstgespräch</h3><p>In der psychotherapeutischen Sprechstunde besprechen wir das Anliegen und klären, welche Unterstützung sinnvoll ist.</p></article><article><span>03</span><h3>Probesitzungen (Probatorik)</h3><p>Wir lernen uns besser kennen, klären die Beschwerden genauer und besprechen mögliche Therapieziele. Gemeinsam entscheiden wir, ob eine Behandlung bei mir passt.</p></article></div>
+    <section class="section-shell section-pad process-section" id="ablauf"><div class="section-kicker"><span>Ablauf</span></div><div class="process-heading"><h2>Schritt für Schritt.</h2><p>Vom ersten Kontakt bis zur gemeinsamen Entscheidung über eine Behandlung.</p></div><div class="process-steps"><article><span>01</span><h3>Kontakt aufnehmen</h3><p>Rufen Sie zu den Telefonzeiten an oder schreiben Sie eine E-Mail. Wir vereinbaren einen Termin für das erste Gespräch.</p></article><article><span>02</span><h3>Erstgespräch</h3><p>In der psychotherapeutischen Sprechstunde besprechen wir das Anliegen und klären, welche Unterstützung sinnvoll ist.</p></article><article><span>03</span><h3>Probesitzungen (Probatorik)</h3><p>Wir lernen uns besser kennen, klären die Beschwerden genauer und besprechen mögliche Therapieziele. Gemeinsam entscheiden wir, ob eine Behandlung bei mir passt.</p></article></div>
       <details class="site-disclosure process-detail">
         <summary>Wie lange dauern Sprechstunde und Probesitzungen?</summary>
         <p>Eine Einheit der psychotherapeutischen Sprechstunde dauert mindestens 25 Minuten. Für Kinder und Jugendliche sind bis zu 250 Minuten je Krankheitsfall möglich. Vor einer weiteren Behandlung sind in der Regel mindestens 50 Minuten Sprechstunde vorgesehen. Vor einer Kurz- oder Langzeittherapie finden bei Kindern und Jugendlichen zwei bis sechs Probesitzungen statt.</p>
