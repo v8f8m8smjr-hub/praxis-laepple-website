@@ -769,12 +769,14 @@ body{overflow-x:hidden}
   white-space:nowrap
 }
 
+.practice-downloads .first-appointment-panel,
 .practice-downloads .practice-information{
-  margin-top:14px;
   padding:0 11px 9px;
   border:1px solid var(--line);
   border-radius:4px
 }
+.practice-downloads .first-appointment-panel{padding-top:12px}
+.practice-downloads .practice-information{margin-top:14px}
 .practice-downloads .practice-information .form-note{
   margin:0;
   color:var(--ink-soft);
