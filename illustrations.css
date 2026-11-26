@@ -794,3 +794,37 @@ body{overflow-x:hidden}
   font-weight:650
 }
 .practice-downloads .treatment-downloads[open] .form-download-list{padding-bottom:7px}
+
+.offer-section .offer-layout,
+.family-section .family-layout{padding-block:clamp(44px,6vw,82px)}
+.offer-section .offer-card{padding-block:20px}
+.family-questions{margin-top:18px}
+.site-disclosure{border-top:1px solid var(--line)}
+.site-disclosure:last-child{border-bottom:1px solid var(--line)}
+.site-disclosure summary{
+  display:list-item;
+  padding:12px 0;
+  min-height:44px;
+  cursor:pointer;
+  color:var(--ink);
+  font-size:15px;
+  font-weight:650
+}
+.site-disclosure p{margin:0 0 14px;max-width:66ch;font-size:14px;line-height:1.6}
+.process-detail{margin-top:22px}
+.contact-download-jump{display:inline-block;margin-top:8px;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+#first-appointment-title{scroll-margin-top:100px}
+.crisis-section{
+  background:#f3ebe2;
+  border-top:1px solid var(--line);
+  padding-block:clamp(35px,5vw,65px)
+}
+.crisis-section .crisis-note{margin:0 auto;border:0;box-shadow:none}
+.crisis-section .crisis-note>div{max-width:75ch}
+.crisis-section h2{margin:0 0 15px;font-size:clamp(29px,4vw,44px)}
+.crisis-section h3{margin:18px 0 6px;font-size:16px}
+@media(max-width:760px){
+  .hero-actions .button{font-size:clamp(13px,3.5vw,15px)!important}
+  .offer-section .offer-layout,.family-section .family-layout{padding-block:42px}
+  .family-layout{gap:18px}
+}
