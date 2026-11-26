@@ -36,7 +36,34 @@
     #main .offer-card,
     #main .membership-note,
     #main .contact-card,
-    #main .process-steps article > span { background: var(--warm-glass-surface); }
+    #main .process-steps article > span {
+      background: var(--warm-glass-surface);
+      border-color: rgba(159,120,94,.46);
+      border-top-color: rgba(255,255,255,.94);
+      border-left-color: rgba(255,250,244,.88);
+      box-shadow: inset 0 0 0 1px rgba(255,251,245,.58), inset 0 2px 4px rgba(255,255,255,.82),
+        inset 0 -3px 5px rgba(147,103,76,.25), 0 4px 10px rgba(78,59,50,.15);
+    }
+    #main .process-steps::before { content: none; }
+    #main .process-steps article:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      background: #be927c;
+      opacity: .65;
+    }
+    @media (min-width: 761px) {
+      #main .process-steps article:not(:last-child)::before { top: 23px; left: 49px; right: -29px; height: 1px; }
+    }
+    @media (max-width: 760px) {
+      #main .process-steps article:not(:last-child)::before { top: 49px; bottom: -17px; left: 22px; width: 1px; }
+    }
+    #main .offer-card,
+    #main .membership-note,
+    #main .contact-card {
+      box-shadow: inset 0 0 0 1px rgba(255,251,245,.63), inset 0 2px 5px rgba(255,255,255,.78),
+        inset 0 -3px 7px rgba(147,103,76,.19), 0 6px 15px rgba(78,59,50,.12);
+    }
     #main .offer-card { transition: none; }
     #main .offer-card:hover { transform: none; }
     #start .hero-actions .button {
