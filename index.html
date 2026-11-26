@@ -32,6 +32,28 @@
   <link rel="stylesheet" href="image-styles.css?v=20261110f">
   <link rel="stylesheet" href="illustrations.css?v=20261126-ersttermin">
   <style>
+    .page-color-field {
+      background:
+        radial-gradient(ellipse 65% 560px at 80% 120px, rgba(233,202,181,.46), transparent 74%),
+        radial-gradient(ellipse 90% var(--sage-spread, 1050px) at 9% var(--sage-center, 24%), rgba(192,204,182,.48), transparent 78%),
+        radial-gradient(ellipse 87% var(--copper-spread, 1250px) at 95% var(--copper-center, 75%), rgba(224,181,155,.39), transparent 80%),
+        linear-gradient(90deg,#fbf8f2 0%,#f7f0e8 55%,#f3e9df 100%);
+    }
+    .page-color-field #main > section, .page-color-field > .site-footer { background: transparent !important; }
+    #main > .hero::before, #main > .process-section::before { background: none !important; }
+    #main > .welcome::before {
+      background-image:
+        radial-gradient(circle at 18% 28%,rgba(255,255,255,.82) 0 2px,transparent 3px),
+        radial-gradient(circle at 64% 74%,rgba(226,180,158,.3) 0 2px,transparent 3px),
+        radial-gradient(circle at 86% 22%,rgba(194,203,184,.36) 0 3px,transparent 4px) !important;
+    }
+    #main > .person-section, #main > .crisis-section { border-top: 0 !important; }
+    #main .ambient--margin { display: none; }
+    @media (min-width: 1380px) {
+      #main .ambient--margin { display: block; inset: 0 -96px; z-index: -1; }
+      #main .ambient--welcome-margin .ambient-shape { left: 17px; top: 26%; width: 44px; height: 67px; opacity: .45; }
+      #main .ambient--process-margin .ambient-shape { right: 20px; top: 13%; width: 46px; opacity: .46; }
+    }
     .person-copy .person-bio p { font-size: 14px; color: var(--ink-soft); line-height: 1.9; }
     @media (max-width: 760px) {
       #person .person-copy { display: contents; }
@@ -75,6 +97,7 @@
     </nav>
   </header>
 
+  <div class="page-color-field">
   <main id="main">
     <section class="hero section-shell" id="start">
       <div class="ambient-composition ambient--hero" aria-hidden="true"><span class="ambient-shape ambient-sculpture"></span><span class="ambient-shape ambient-orb ambient-orb--peach"></span><span class="ambient-shape ambient-ring"></span><span class="ambient-shape ambient-petal"></span><i class="ambient-bead bead-one"></i><i class="ambient-bead bead-two"></i><i class="ambient-bead bead-three"></i></div>
@@ -88,6 +111,7 @@
     </section>
 
     <section class="welcome welcome-compact section-shell section-pad" aria-labelledby="welcome-title">
+      <div class="ambient-composition ambient--margin ambient--welcome-margin" aria-hidden="true"><span class="ambient-shape ambient-petal ambient-petal--clay"></span></div>
       <div class="ambient-composition ambient--welcome" aria-hidden="true"><span class="ambient-shape ambient-orb ambient-orb--sage"></span><span class="ambient-shape ambient-ring ambient-ring--small"></span><i class="ambient-bead bead-one"></i><i class="ambient-bead bead-two"></i></div>
       <div class="section-kicker"><span>Worum es geht</span></div>
       <div class="welcome-content"><h2 id="welcome-title">Jeder Mensch bringt<br>seine eigene Geschichte mit.</h2><div><p>Wenn Sorgen, Konflikte oder Veränderungen den Alltag schwer machen, schauen wir gemeinsam darauf, was im Alltag belastet und was helfen kann.</p></div></div>
@@ -100,7 +124,7 @@
         <article class="offer-card"><h3>Bezugspersonen gezielt einbeziehen</h3><p>In Gesprächen mit Eltern oder anderen Bezugspersonen können wir zum Beispiel erarbeiten, wie sie bei Schulangst oder Konflikten zu Hause unterstützen. Welche Gespräche sinnvoll sind und welche Inhalte vertraulich bleiben, klären wir gemeinsam.</p></article>
       </div></div></section>
 
-    <section class="section-shell section-pad process-section" id="ablauf"><div class="section-kicker"><span>Ablauf</span></div><div class="process-heading"><h2>Schritt für Schritt.</h2><p>Vom ersten Kontakt bis zur gemeinsamen Entscheidung über eine Behandlung.</p></div><div class="process-steps"><article><span>01</span><h3>Kontakt aufnehmen</h3><p>Rufen Sie zu den Telefonzeiten an oder schreiben Sie eine E-Mail. Wir vereinbaren einen Termin für das erste Gespräch.</p></article><article><span>02</span><h3>Erstgespräch</h3><p>In der psychotherapeutischen Sprechstunde besprechen wir das Anliegen und klären, welche Unterstützung sinnvoll ist.</p></article><article><span>03</span><h3>Probesitzungen (Probatorik)</h3><p>Wir lernen uns besser kennen, klären die Beschwerden genauer und besprechen mögliche Therapieziele. Gemeinsam entscheiden wir, ob eine Behandlung bei mir passt.</p></article></div>
+    <section class="section-shell section-pad process-section" id="ablauf"><div class="ambient-composition ambient--margin ambient--process-margin" aria-hidden="true"><span class="ambient-shape ambient-orb ambient-orb--sage"></span></div><div class="section-kicker"><span>Ablauf</span></div><div class="process-heading"><h2>Schritt für Schritt.</h2><p>Vom ersten Kontakt bis zur gemeinsamen Entscheidung über eine Behandlung.</p></div><div class="process-steps"><article><span>01</span><h3>Kontakt aufnehmen</h3><p>Rufen Sie zu den Telefonzeiten an oder schreiben Sie eine E-Mail. Wir vereinbaren einen Termin für das erste Gespräch.</p></article><article><span>02</span><h3>Erstgespräch</h3><p>In der psychotherapeutischen Sprechstunde besprechen wir das Anliegen und klären, welche Unterstützung sinnvoll ist.</p></article><article><span>03</span><h3>Probesitzungen (Probatorik)</h3><p>Wir lernen uns besser kennen, klären die Beschwerden genauer und besprechen mögliche Therapieziele. Gemeinsam entscheiden wir, ob eine Behandlung bei mir passt.</p></article></div>
       <details class="site-disclosure process-detail">
         <summary>Wie lange dauern Sprechstunde und Probesitzungen?</summary>
         <p>Eine Einheit der psychotherapeutischen Sprechstunde dauert mindestens 25 Minuten. Für Kinder und Jugendliche sind bis zu 250 Minuten je Krankheitsfall möglich. Vor einer weiteren Behandlung sind in der Regel mindestens 50 Minuten Sprechstunde vorgesehen. Vor einer Kurz- oder Langzeittherapie finden bei Kindern und Jugendlichen zwei bis sechs Probesitzungen statt.</p>
@@ -196,6 +220,25 @@
   </main>
   <footer class="site-footer"><div class="section-shell footer-main"><a class="brand footer-brand" href="#start"><span class="brand-mark" aria-hidden="true"><img class="brand-logo" src="images/origami-transparent-icon.png" alt="" aria-hidden="true" width="512" height="512"></span><span class="brand-copy"><strong>Kai Läpple</strong><small>Kinder- &amp; Jugendlichenpsychotherapie</small></span></a><p>Mit Zeit, Klarheit und einem offenen Ohr.</p><a class="footer-top" href="#start">Nach oben ↑</a></div><div class="section-shell footer-bottom"><span>© <span id="year">2026</span> Kai Läpple</span><div><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div><span>Gemeinschaftspraxis Läpple · Waiblingen-Bittenfeld</span></div>
   </footer>
+  </div>
   <script src="script.js?v=20261110f"></script>
+  <script>
+    {
+      const field = document.querySelector(".page-color-field");
+      const treatment = document.getElementById("angebot");
+      const contact = document.getElementById("kontakt");
+      const updateColors = () => {
+        const top = field.getBoundingClientRect().top;
+        for (const [name, section] of [["sage", treatment], ["copper", contact]]) {
+          const bounds = section.getBoundingClientRect();
+          field.style.setProperty(`--${name}-center`, `${bounds.top - top + bounds.height * 0.42}px`);
+          field.style.setProperty(`--${name}-spread`, `${Math.max(520, bounds.height * 0.9)}px`);
+        }
+      };
+      updateColors();
+      const observer = new ResizeObserver(updateColors);
+      for (const section of [field, ...field.querySelectorAll("#main > section")]) observer.observe(section);
+    }
+  </script>
 </body>
 </html>
