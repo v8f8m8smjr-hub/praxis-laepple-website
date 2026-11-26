@@ -42,6 +42,22 @@
       #person .person-intro .section-kicker { margin-bottom: 12px; }
       #person .person-intro .eyebrow { margin-bottom: 0; }
     }
+    #start .hero-specialty { margin: 0 0 12px; font-weight: 700; }
+    #start .hero-bottom { justify-content: flex-end; }
+    #kontakt .contact-layout { row-gap: 24px; }
+    #kontakt .contact-downloads { margin-top: 0; min-width: 0; }
+    .contact-downloads > h3 { margin: 0 0 12px; font-size: clamp(20px, 3vw, 26px); }
+    .crisis-section .crisis-priority { padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+    .crisis-section .crisis-priority p { margin: 0 0 8px; font-size: 14px; }
+    .crisis-section .crisis-local { padding-top: 5px; border-top: 1px solid var(--line); }
+    @media (min-width: 761px) {
+      #kontakt .contact-downloads { grid-column: 2; }
+      .crisis-section .crisis-local { grid-column: 1 / -1; }
+    }
+    @media (max-width: 760px) {
+      #start { padding-bottom: 30px; }
+      #start .hero-bottom { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -62,13 +78,13 @@
       <div class="ambient-composition ambient--hero" aria-hidden="true"><span class="ambient-shape ambient-sculpture"></span><span class="ambient-shape ambient-orb ambient-orb--peach"></span><span class="ambient-shape ambient-ring"></span><span class="ambient-shape ambient-petal"></span><i class="ambient-bead bead-one"></i><i class="ambient-bead bead-two"></i><i class="ambient-bead bead-three"></i></div>
         <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-dot"></span> Ein geschützter Raum zum Verstehen und Wachsen</p>
-        <h1>Manchmal hilft es,<br>den nächsten Schritt<br><em>gemeinsam zu&nbsp;gehen.</em></h1>
         <p class="hero-specialty">Kinder- und Jugendlichenpsychotherapie in Waiblingen-Bittenfeld</p>
+        <h1>Manchmal hilft es,<br>den nächsten Schritt<br><em>gemeinsam zu&nbsp;gehen.</em></h1>
         <p class="hero-intro">Ich begleite Kinder, Jugendliche und junge Erwachsene sowie ihre Familien.</p>
         <div class="hero-actions"><a class="button button-dark" href="#kontakt">Erstgespräch anfragen <span aria-hidden="true">↓</span></a><a class="button button-outline" href="#ablauf">So läuft die Behandlung ab <span aria-hidden="true">↓</span></a></div>
       </div>
 
-      <div class="hero-bottom"><span>Für Kinder, Jugendliche und Bezugspersonen</span><span class="scroll-cue">Weiter entdecken <b>↓</b></span></div>
+      <div class="hero-bottom"><span class="scroll-cue">Weiter entdecken <b>↓</b></span></div>
     </section>
 
     <section class="welcome welcome-compact section-shell section-pad" aria-labelledby="welcome-title">
@@ -139,16 +155,18 @@
         </span>
         <small id="whatsapp-hinweis">Bitte senden Sie dort keine Gesundheitsdaten, Befunde oder ausgefüllten Anmeldebögen. <a href="datenschutz.html#whatsapp">Datenschutzhinweise zu WhatsApp</a></small>
       </dd></div><div><dt>Telefonzeiten</dt><dd>Montag, 13:00–17:00 Uhr<br>Freitag, 09:00–12:00 Uhr<br><small>Die Telefonzeiten sind unabhängig von den Praxiszeiten. Wenn ich nicht ans Telefon gehen kann, schreiben Sie mir bitte eine E-Mail.</small></dd></div><div class="contact-email"><dt>E-Mail</dt><dd><a href="mailto:kontakt@praxis-laepple.de">kontakt@praxis-laepple.de</a></dd></div><div><dt>Adresse</dt><dd>Herzogsgasse 3<br>71336 Waiblingen-Bittenfeld<span class="contact-directions"><a href="https://www.google.com/maps/search/?api=1&amp;query=Herzogsgasse%203%2C%2071336%20Waiblingen-Bittenfeld" target="_blank" rel="noopener noreferrer">Praxis in Google Maps suchen ↗</a><br>Praxisparkplatz vorhanden<br>ÖPNV: Bus 201 bis zur Haltestelle „Altes Rathaus“ in Bittenfeld, anschließend etwa 2 Gehminuten. Die Praxis liegt im Erdgeschoss und ist barrierefrei zugänglich.</span></dd></div></dl><div class="hours-block" style="margin-top:14px;padding-top:0;border-top:0"><h4>Praxiszeiten</h4><dl><div><dt>Montag</dt><dd>08:00–12:00 Uhr</dd></div><div><dt>Dienstag</dt><dd>13:00–17:00 Uhr</dd></div><div><dt>Mittwoch</dt><dd>13:00–17:00 Uhr</dd></div><div><dt>Donnerstag</dt><dd>08:00–12:00 Uhr</dd></div><div><dt>Freitag</dt><dd>13:00–17:00 Uhr</dd></div></dl><small>Die angegebenen Tageszeiten sind Zeitfenster, keine konkreten Sprechstundenzeiten.</small></div>
-      <section class="practice-downloads" aria-labelledby="first-appointment-title">
+      </div>
+      <section class="practice-downloads contact-downloads" aria-labelledby="first-appointment-title">
+        <h3 id="first-appointment-title">Unterlagen fürs Erstgespräch</h3>
         <div class="first-appointment-panel">
-          <h4 id="first-appointment-title">Zum ersten Termin mitbringen</h4>
+          <h4>Zum ersten Termin mitbringen</h4>
           <p class="form-note">Bitte bringen Sie, falls Sie gesetzlich versichert sind, Ihre Gesundheitskarte mit. Hilfreich sind auch bereits vorhandene Unterlagen, zum Beispiel das U-Heft, Schulzeugnisse, Befunde oder Berichte aus früheren Behandlungen. Sie können die PDF-Formulare ausfüllen und mir zukommen lassen oder zum Erstgespräch mitbringen.</p>
           <ul class="form-download-list">
             <li><a class="form-download" href="patientenbogen.pdf"><strong>Patientenbogen</strong><small>PDF</small></a></li>
             <li><a class="form-download" href="anmeldebogen.pdf?v=20261126-hell"><strong>Anamnesebogen</strong><small>PDF</small></a></li>
-            <li><a class="form-download" href="sorgerecht-einverstaendnis.pdf"><strong>Sorgerecht und Einverständnis</strong><small>PDF</small></a></li>
+            <li><a class="form-download" href="sorgerecht-einverstaendnis.pdf"><strong>Sorgerecht</strong><small>PDF</small></a></li>
             <li><a class="form-download" href="epa-bogen.pdf?v=20261126-fusszeile"><strong>ePA-Bogen</strong><small>PDF</small></a></li>
-            <li><a class="form-download" href="einverstaendniserklaerungen-psychotherapie.pdf"><strong>Einverständniserklärungen zur Psychotherapie</strong><small>PDF</small></a></li>
+            <li><a class="form-download" href="einverstaendniserklaerungen-psychotherapie.pdf"><strong>Einverständniserklärungen</strong><small>PDF</small></a></li>
           </ul>
         </div>
         <div class="practice-information">
@@ -164,9 +182,16 @@
           </ul>
         </details>
       </section>
-      </div></div>
+      </div>
     </section>
-    <section class="crisis-section" id="krisenhilfe" aria-labelledby="crisis-title"><div class="section-shell crisis-note"><div><p class="mini-label">Hilfe außerhalb der Praxis</p><h2 id="crisis-title">Wenn es dringend ist</h2><div class="crisis-audiences"><section><h3>Für Jugendliche</h3><p>Bei akuter Gefahr für dich oder andere: <a href="tel:112">112</a>. Für dringende medizinische Anliegen außerhalb der Sprechzeiten ist der ärztliche Bereitschaftsdienst unter <a href="tel:116117">116 117</a> erreichbar.</p><p>Du kannst dich anonym und kostenlos an das Kinder- und Jugendtelefon der <a href="https://www.nummergegenkummer.de/kinder-und-jugendberatung/" target="_blank" rel="noopener noreferrer">Nummer gegen Kummer ↗</a> wenden: <a href="tel:116111">116 111</a>. Die aktuellen Beratungszeiten stehen auf der verlinkten Seite.</p></section><section><h3>Für Eltern und sonstige Bezugspersonen</h3><p>Bei akuter Gefahr: <a href="tel:112">112</a>. Für dringende medizinische Anliegen außerhalb der Sprechzeiten erreichen Sie den ärztlichen Bereitschaftsdienst unter <a href="tel:116117">116 117</a>. Die <a href="https://www.telefonseelsorge.de/" target="_blank" rel="noopener noreferrer">Telefonseelsorge ↗</a> ist anonym und kostenfrei rund um die Uhr unter <a href="tel:08001110111">0800 111 0 111</a> erreichbar. Das Elterntelefon der <a href="https://www.nummergegenkummer.de/elternberatung/" target="_blank" rel="noopener noreferrer">Nummer gegen Kummer ↗</a> erreichen Sie unter <a href="tel:08001110550">0800 111 0 550</a>; aktuelle Erreichbarkeit siehe Website.</p><p><strong>Vor Ort in Winnenden:</strong> Bei einem medizinischen Notfall können Sie die Notaufnahme des Rems-Murr-Klinikums, Am Jakobsweg 1, aufsuchen. Die Kinder- und Jugendpsychiatrische Tagesklinik/PIA Winnenden, Schloßstraße 50, ist unter <a href="tel:+4971959003500">07195 900-3500</a> zu ihren regulären Öffnungszeiten erreichbar; sie ist kein 24-Stunden-Notdienst.</p><p><strong>Vollstationäre Klinik für Kinder- und Jugendpsychiatrie in Stuttgart (Bad Cannstatt):</strong> Klinik für Kinder- und Jugendpsychiatrie und Psychotherapie, Jugendstation, Prießnitzweg 24, 70374 Stuttgart. Telefon werktags von 09:00 bis 16:00 Uhr: <a href="tel:+4971127872471">0711 278-72471</a> oder <a href="tel:+4971127872470">0711 278-72470</a>; nachts, an Wochenenden und Feiertagen: <a href="tel:+4971127872482">0711 278-72482</a>. Wenn möglich, nehmen Sie vorab telefonisch Kontakt auf. <a href="https://www.klinikum-stuttgart.de/medizin-pflege/kinder-jugendpsychiatrie-psychotherapie/kontakt-sprechstunden" target="_blank" rel="noopener noreferrer">Notfallkontakte ↗</a> · <a href="https://www.klinikum-stuttgart.de/medizin-pflege/kinder-jugendpsychiatrie-psychotherapie/krisenmanagement" target="_blank" rel="noopener noreferrer">Informationen zur Krisenversorgung ↗</a></p></section></div><small>Bei unmittelbarer Lebensgefahr bitte 112 wählen. Beratungsangebote ersetzen keinen Notruf und keine persönliche Behandlung.</small></div></div>
+    <section class="crisis-section" id="krisenhilfe" aria-labelledby="crisis-title"><div class="section-shell crisis-note"><div><p class="mini-label">Hilfe außerhalb der Praxis</p><h2 id="crisis-title">Wenn es dringend ist</h2>
+      <div class="crisis-priority">
+        <p><strong>Bei akuter Gefahr</strong> <a href="tel:112">112</a></p>
+        <p><strong>Ärztlicher Bereitschaftsdienst</strong> <a href="tel:116117">116 117</a><br>Für dringende medizinische Anliegen außerhalb der Sprechzeiten</p>
+      </div>
+      <div class="crisis-audiences">
+        <section><h3>Für Jugendliche</h3><p>Du kannst Dich anonym und kostenlos an das Kinder- und Jugendtelefon der <a href="https://www.nummergegenkummer.de/kinder-und-jugendberatung/" target="_blank" rel="noopener noreferrer">Nummer gegen Kummer ↗</a> wenden: <a href="tel:116111">116 111</a>. Die aktuellen Beratungszeiten stehen auf der verlinkten Seite.</p></section><section><h3>Für Eltern und sonstige Bezugspersonen</h3><p>Die <a href="https://www.telefonseelsorge.de/" target="_blank" rel="noopener noreferrer">Telefonseelsorge ↗</a> ist anonym und kostenfrei rund um die Uhr unter <a href="tel:08001110111">0800 111 0 111</a> erreichbar.</p><p>Das Elterntelefon der <a href="https://www.nummergegenkummer.de/elternberatung/" target="_blank" rel="noopener noreferrer">Nummer gegen Kummer ↗</a> erreichen Sie unter <a href="tel:08001110550">0800 111 0 550</a>; aktuelle Erreichbarkeit siehe Website.</p></section>
+        <section class="crisis-local"><h3>Regionale Anlaufstellen</h3><p><strong>Vor Ort in Winnenden:</strong> Bei einem medizinischen Notfall können Sie die Notaufnahme des Rems-Murr-Klinikums, Am Jakobsweg 1, aufsuchen. Die Kinder- und Jugendpsychiatrische Tagesklinik/PIA Winnenden, Schloßstraße 50, ist unter <a href="tel:+4971959003500">07195 900-3500</a> zu ihren regulären Öffnungszeiten erreichbar; sie ist kein 24-Stunden-Notdienst.</p><p><strong>Vollstationäre Klinik für Kinder- und Jugendpsychiatrie in Stuttgart (Bad Cannstatt):</strong> Klinik für Kinder- und Jugendpsychiatrie und Psychotherapie, Jugendstation, Prießnitzweg 24, 70374 Stuttgart. Telefon werktags von 09:00 bis 16:00 Uhr: <a href="tel:+4971127872471">0711 278-72471</a> oder <a href="tel:+4971127872470">0711 278-72470</a>; nachts, an Wochenenden und Feiertagen: <a href="tel:+4971127872482">0711 278-72482</a>. Wenn möglich, nehmen Sie vorab telefonisch Kontakt auf. <a href="https://www.klinikum-stuttgart.de/medizin-pflege/kinder-jugendpsychiatrie-psychotherapie/kontakt-sprechstunden" target="_blank" rel="noopener noreferrer">Notfallkontakte ↗</a> · <a href="https://www.klinikum-stuttgart.de/medizin-pflege/kinder-jugendpsychiatrie-psychotherapie/krisenmanagement" target="_blank" rel="noopener noreferrer">Informationen zur Krisenversorgung ↗</a></p></section></div><small>Beratungsangebote ersetzen keinen Notruf und keine persönliche Behandlung.</small></div></div>
     </section>
   </main>
   <footer class="site-footer"><div class="section-shell footer-main"><a class="brand footer-brand" href="#start"><span class="brand-mark" aria-hidden="true"><img class="brand-logo" src="images/origami-transparent-icon.png" alt="" aria-hidden="true" width="512" height="512"></span><span class="brand-copy"><strong>Kai Läpple</strong><small>Kinder- &amp; Jugendlichenpsychotherapie</small></span></a><p>Mit Zeit, Klarheit und einem offenen Ohr.</p><a class="footer-top" href="#start">Nach oben ↑</a></div><div class="section-shell footer-bottom"><span>© <span id="year">2026</span> Kai Läpple</span><div><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div><span>Gemeinschaftspraxis Läpple · Waiblingen-Bittenfeld</span></div>
