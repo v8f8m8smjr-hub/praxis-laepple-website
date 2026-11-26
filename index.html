@@ -32,6 +32,33 @@
   <link rel="stylesheet" href="image-styles.css?v=20261110f">
   <link rel="stylesheet" href="illustrations.css?v=20261126-ersttermin">
   <style>
+    #site-nav a:not(.nav-contact) {
+      position: relative;
+      transition: color .24s ease, transform .28s ease;
+    }
+    #site-nav a:not(.nav-contact)::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 -5px;
+      height: 2px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #84513d, #c98a70);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .32s cubic-bezier(.22,.8,.3,1);
+      pointer-events: none;
+    }
+    #site-nav a:not(.nav-contact):is(:hover, :focus-visible) { color: #84513d; }
+    #site-nav a:not(.nav-contact):is(:hover, :focus-visible)::after { transform: scaleX(1); }
+    @media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+      #site-nav a:not(.nav-contact):is(:hover, :focus-visible) { transform: translateY(-2px); }
+    }
+    @media (max-width: 760px) {
+      #site-nav a:not(.nav-contact)::after { inset: auto auto 3px 2px; width: 2.5rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #site-nav a:not(.nav-contact), #site-nav a:not(.nav-contact)::after { transition: none; }
+    }
     #kontakt .whatsapp-contact {
       display: inline-flex;
       align-items: center;
