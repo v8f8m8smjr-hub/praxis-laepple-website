@@ -35,12 +35,24 @@
     .page-color-field {
       background:
         radial-gradient(ellipse 65% 560px at 80% 120px, rgba(233,202,181,.46), transparent 74%),
-        radial-gradient(ellipse 90% var(--sage-spread, 1050px) at 9% var(--sage-center, 24%), rgba(192,204,182,.48), transparent 78%),
+        radial-gradient(ellipse 90% var(--taupe-spread, 1050px) at 9% var(--taupe-center, 24%), rgba(202,184,162,.50), transparent 78%),
         radial-gradient(ellipse 87% var(--copper-spread, 1250px) at 95% var(--copper-center, 75%), rgba(224,181,155,.39), transparent 80%),
         linear-gradient(90deg,#fbf8f2 0%,#f7f0e8 55%,#f3e9df 100%);
     }
     .page-color-field #main > section, .page-color-field > .site-footer { background: transparent !important; }
     #main > .hero::before, #main > .process-section::before { background: none !important; }
+    #main > .welcome::after { content: none !important; }
+    @media (prefers-reduced-motion: no-preference) {
+      #start .ambient-sculpture { animation: hero-sculpture-drift 29s ease-in-out infinite alternate; }
+      #start .ambient--hero .ambient-orb { animation-duration: 15s; }
+      #start .ambient--hero .ambient-ring { animation-duration: 21s; }
+      #start .ambient--hero .ambient-petal { animation-duration: 18s; }
+    }
+    @keyframes hero-sculpture-drift {
+      0% { border-radius: 63% 37% 49% 51% / 44% 45% 55% 56%; transform: translate3d(0, 0, 0) rotate(-5deg) scale(.98); }
+      50% { border-radius: 43% 57% 58% 42% / 56% 39% 61% 44%; transform: translate3d(10px, 16px, 18px) rotate(1deg) scale(1.02); }
+      100% { border-radius: 55% 45% 39% 61% / 42% 59% 41% 58%; transform: translate3d(22px, -14px, 0) rotate(7deg) scale(1.04); }
+    }
     #main > .welcome::before {
       background-image:
         radial-gradient(circle at 18% 28%,rgba(255,255,255,.82) 0 2px,transparent 3px),
@@ -51,7 +63,6 @@
     #main .ambient--margin { display: none; }
     @media (min-width: 1380px) {
       #main .ambient--margin { display: block; inset: 0 -96px; z-index: -1; }
-      #main .ambient--welcome-margin .ambient-shape { left: 17px; top: 26%; width: 44px; height: 67px; opacity: .45; }
       #main .ambient--process-margin .ambient-shape { right: 20px; top: 13%; width: 46px; opacity: .46; }
     }
     .person-copy .person-bio p { font-size: 14px; color: var(--ink-soft); line-height: 1.9; }
@@ -111,7 +122,6 @@
     </section>
 
     <section class="welcome welcome-compact section-shell section-pad" aria-labelledby="welcome-title">
-      <div class="ambient-composition ambient--margin ambient--welcome-margin" aria-hidden="true"><span class="ambient-shape ambient-petal ambient-petal--clay"></span></div>
       <div class="ambient-composition ambient--welcome" aria-hidden="true"><span class="ambient-shape ambient-orb ambient-orb--sage"></span><span class="ambient-shape ambient-ring ambient-ring--small"></span><i class="ambient-bead bead-one"></i><i class="ambient-bead bead-two"></i></div>
       <div class="section-kicker"><span>Worum es geht</span></div>
       <div class="welcome-content"><h2 id="welcome-title">Jeder Mensch bringt<br>seine eigene Geschichte mit.</h2><div><p>Wenn Sorgen, Konflikte oder Veränderungen den Alltag schwer machen, schauen wir gemeinsam darauf, was im Alltag belastet und was helfen kann.</p></div></div>
@@ -229,7 +239,7 @@
       const contact = document.getElementById("kontakt");
       const updateColors = () => {
         const top = field.getBoundingClientRect().top;
-        for (const [name, section] of [["sage", treatment], ["copper", contact]]) {
+        for (const [name, section] of [["taupe", treatment], ["copper", contact]]) {
           const bounds = section.getBoundingClientRect();
           field.style.setProperty(`--${name}-center`, `${bounds.top - top + bounds.height * 0.42}px`);
           field.style.setProperty(`--${name}-spread`, `${Math.max(520, bounds.height * 0.9)}px`);
