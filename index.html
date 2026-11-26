@@ -32,6 +32,26 @@
   <link rel="stylesheet" href="image-styles.css?v=20261110f">
   <link rel="stylesheet" href="illustrations.css?v=20261126-ersttermin">
   <style>
+    .welcome .welcome-story { display: flex; align-items: center; gap: clamp(14px, 2vw, 26px); min-width: 0; }
+    .welcome .welcome-story p { margin-bottom: 0; }
+    .welcome-crane { flex: 0 0 clamp(65px, 8vw, 105px); }
+    .welcome-crane img {
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(3px 7px 5px rgba(119,77,55,.21));
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .welcome-crane img { animation: welcome-crane-sway 9s ease-in-out infinite alternate; }
+    }
+    @keyframes welcome-crane-sway {
+      from { transform: translateY(2px) rotate(-5deg); filter: drop-shadow(2px 5px 4px rgba(119,77,55,.23)); }
+      to { transform: translateY(-6px) rotate(5deg); filter: drop-shadow(5px 10px 6px rgba(119,77,55,.15)); }
+    }
+    @media (max-width: 760px) {
+      .welcome .welcome-story { display: grid; gap: 3px; }
+      .welcome-crane { width: 65px; justify-self: end; }
+    }
     #site-nav a:not(.nav-contact) {
       position: relative;
       transition: color .24s ease, transform .28s ease;
@@ -230,7 +250,7 @@
     <section class="welcome welcome-compact section-shell section-pad" aria-labelledby="welcome-title">
       <div class="ambient-composition ambient--welcome" aria-hidden="true"><span class="ambient-shape ambient-orb ambient-orb--sage"></span><span class="ambient-shape ambient-ring ambient-ring--small"></span><i class="ambient-bead bead-one"></i><i class="ambient-bead bead-two"></i></div>
       <div class="section-kicker"><span>Worum es geht</span></div>
-      <div class="welcome-content"><h2 id="welcome-title">Jeder Mensch bringt<br>seine eigene Geschichte mit.</h2><div><p>Wenn Sorgen, Konflikte oder Veränderungen den Alltag schwer machen, schauen wir gemeinsam darauf, was im Alltag belastet und was helfen kann.</p></div></div>
+      <div class="welcome-content"><h2 id="welcome-title">Jeder Mensch bringt<br>seine eigene Geschichte mit.</h2><div class="welcome-story"><p>Wenn Sorgen, Konflikte oder Veränderungen den Alltag schwer machen, schauen wir gemeinsam darauf, was im Alltag belastet und was helfen kann.</p><div class="welcome-crane" aria-hidden="true"><img src="images/origami-transparent-icon.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div></div></div>
     </section>
 
     <section class="offer-section" id="angebot">
