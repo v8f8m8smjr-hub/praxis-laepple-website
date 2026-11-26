@@ -768,3 +768,15 @@ body{overflow-x:hidden}
   font-size:12px;
   white-space:nowrap
 }
+
+.practice-downloads .practice-information{
+  margin-top:14px;
+  padding:0 11px 9px;
+  border:1px solid var(--line);
+  border-radius:4px
+}
+.practice-downloads .practice-information .form-note{
+  margin:0;
+  color:var(--ink-soft);
+  font-size:13px
+}
