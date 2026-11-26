@@ -819,8 +819,12 @@ body{overflow-x:hidden}
   border-top:1px solid var(--line);
   padding-block:clamp(35px,5vw,65px)
 }
-.crisis-section .crisis-note{margin:0 auto;border:0;box-shadow:none}
-.crisis-section .crisis-note>div{max-width:75ch}
+.crisis-section .crisis-note{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:0;border:0;box-shadow:none}
+.crisis-audiences{display:grid;gap:18px}
+.crisis-section .crisis-audiences section+section{margin:0;padding:0;border:0}
+@media(min-width:761px){
+  .crisis-audiences{grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:clamp(24px,4vw,54px)}
+}
 .crisis-section h2{margin:0 0 15px;font-size:clamp(29px,4vw,44px)}
 .crisis-section h3{margin:18px 0 6px;font-size:16px}
 @media(max-width:760px){
