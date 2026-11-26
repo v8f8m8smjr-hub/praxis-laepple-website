@@ -136,6 +136,12 @@
       #person .person-intro { grid-area: 1 / 1; }
       #person .person-visual { grid-area: 2 / 1; }
       #person .person-bio { grid-area: 3 / 1; }
+      #main #person .person-bio h2 {
+        font-size: clamp(18px, 6.8vw, 32px);
+        hyphens: none;
+        overflow-wrap: normal;
+      }
+      #main #person .person-bio h2 span { white-space: nowrap; }
       #person .career-details { grid-area: 4 / 1; }
       #person .person-intro .section-kicker { margin-bottom: 12px; }
       #person .person-intro .eyebrow { margin-bottom: 0; font-size: 13px; }
@@ -223,7 +229,7 @@
           <img class="person-image person-image-classic" src="images/kai-laepple-portrait.jpg" alt="Kai Läpple, klassisches Porträt" loading="lazy" decoding="async">
           -->
         </div>
-        <div class="person-copy"><div class="person-intro"><div class="section-kicker"><span>Meine Person</span></div><p class="eyebrow"><span>Kai Läpple · Jahrgang 1996</span> <span class="degree-line"><span aria-hidden="true">· </span><abbr title="Master of Arts">M.A.</abbr> Sozialpädagogik</span></p></div><div class="person-bio"><h2>Approbierter Kinder- und Jugendlichenpsychotherapeut</h2><p>Seit Oktober 2026 bin ich approbierter Kinder- und Jugendlichenpsychotherapeut, im Arztregister eingetragen und arbeite verhaltenstherapeutisch. Klinische Erfahrung habe ich im ZfP Weinsberg und in der Tagesklinik Winnenden gesammelt. Ich arbeite in einer Gemeinschaftspraxis mit meiner Mutter Dietgard Läpple, Psychologischer Psychotherapeutin (Verhaltenstherapie).</p></div></div>
+        <div class="person-copy"><div class="person-intro"><div class="section-kicker"><span>Meine Person</span></div><p class="eyebrow"><span>Kai Läpple · Jahrgang 1996</span> <span class="degree-line"><span aria-hidden="true">· </span><abbr title="Master of Arts">M.A.</abbr> Sozialpädagogik</span></p></div><div class="person-bio"><h2>Approbierter Kinder- und <span>Jugendlichenpsychotherapeut</span></h2><p>Seit Oktober 2026 bin ich approbierter Kinder- und Jugendlichenpsychotherapeut, im Arztregister eingetragen und arbeite verhaltenstherapeutisch. Klinische Erfahrung habe ich im ZfP Weinsberg und in der Tagesklinik Winnenden gesammelt. Ich arbeite in einer Gemeinschaftspraxis mit meiner Mutter Dietgard Läpple, Psychologischer Psychotherapeutin (Verhaltenstherapie).</p></div></div>
         <details class="career-details">
           <summary id="qualifikation"><span class="when-closed">Beruflichen Werdegang anzeigen</span><span class="when-open">Beruflichen Werdegang ausblenden</span></summary>
       <div class="timeline">
