@@ -743,3 +743,28 @@ body{overflow-x:hidden}
 .career-details[open] .when-open{display:inline}
 .career-details .membership-note{margin-block:16px}
 .reveal-ready .career-details [data-reveal]{opacity:1;transform:none;transition:none}
+
+.practice-downloads{margin-top:22px}
+.practice-downloads h4{margin:0 0 7px}
+.practice-downloads .form-note{display:block;margin:0 0 9px;line-height:1.5}
+.practice-downloads .form-download-list{list-style:none;margin:0;padding:0}
+.practice-downloads .form-download{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:10px;
+  min-height:44px;
+  margin:0;
+  padding:5px 0;
+  border:0;
+  box-shadow:none;
+  background:transparent;
+  line-height:1.35;
+  font-size:14px
+}
+.practice-downloads .form-download small{
+  display:inline;
+  margin:0;
+  font-size:12px;
+  white-space:nowrap
+}
