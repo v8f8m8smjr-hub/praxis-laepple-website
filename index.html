@@ -32,32 +32,6 @@
   <link rel="stylesheet" href="image-styles.css?v=20261110f">
   <link rel="stylesheet" href="illustrations.css?v=20261126-ersttermin">
   <style>
-    /* One color field behind the content; section ornaments keep their own motion. */
-    #main {
-      background:
-        radial-gradient(ellipse at 92% 3%, rgba(221, 179, 156, .30), transparent 23%),
-        radial-gradient(ellipse at 12% 32%, rgba(182, 192, 172, .25), transparent 26%),
-        radial-gradient(ellipse at 85% 66%, rgba(221, 179, 156, .26), transparent 27%),
-        linear-gradient(180deg, #f5f0e9 0%, #eee9e2 27%, #f3ede6 58%, #eee7df 81%, #e9e0d7 100%);
-    }
-    #main > section { background: transparent !important; }
-    #main > .hero::before,
-    #main > .process-section::before { background: none !important; }
-    #main > .welcome::before {
-      background-image:
-        radial-gradient(circle at 18% 28%, rgba(255, 255, 255, .82) 0 2px, transparent 3px),
-        radial-gradient(circle at 64% 74%, rgba(226, 180, 158, .42) 0 2px, transparent 3px),
-        radial-gradient(circle at 86% 22%, rgba(194, 203, 184, .55) 0 3px, transparent 4px) !important;
-    }
-    #main > .person-section,
-    #main > .crisis-section { border-top: 0 !important; }
-    #krisenhilfe .crisis-note {
-      padding: clamp(18px, 3vw, 32px);
-      border: 1px solid var(--line);
-      border-radius: 4px;
-      background: rgba(255, 253, 249, .4);
-    }
-    #main + .site-footer { background: linear-gradient(180deg, #e9e0d7, #e5d7ca); }
     .person-copy .person-bio p { font-size: 14px; color: var(--ink-soft); line-height: 1.9; }
     @media (max-width: 760px) {
       #person .person-copy { display: contents; }
