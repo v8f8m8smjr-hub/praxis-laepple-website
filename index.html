@@ -32,25 +32,41 @@
   <link rel="stylesheet" href="image-styles.css?v=20261110f">
   <link rel="stylesheet" href="illustrations.css?v=20261126-ersttermin">
   <style>
-    .welcome .welcome-story { display: flex; align-items: center; gap: clamp(14px, 2vw, 26px); min-width: 0; }
+    .welcome .welcome-story { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 16px; }
     .welcome .welcome-story p { margin-bottom: 0; }
-    .welcome-crane { flex: 0 0 clamp(65px, 8vw, 105px); }
-    .welcome-crane img {
-      display: block;
-      width: 100%;
-      height: auto;
-      filter: drop-shadow(3px 7px 5px rgba(119,77,55,.21));
+    .welcome-faces { display: flex; align-items: center; gap: 5px; padding: 8px 2px; }
+    .welcome-face {
+      --clay-light: #f0dbc6; --clay-base: #d8af91; --clay-shade: #b27f65; --tilt: -10deg;
+      position: relative; display: block; width: 40px; height: 45px;
+      border-radius: 45% 53% 49% 46% / 49% 42% 54% 51%;
+      background: radial-gradient(ellipse at 30% 23%, var(--clay-light), var(--clay-base) 63%, var(--clay-shade));
+      box-shadow: inset 1px 1px 3px #fff8ef66, inset -2px -2px 5px #68473724, 1px 4px 6px #68473729;
+      transform: rotate(var(--tilt));
     }
+    .welcome-face--thoughtful { --clay-light: #f5e9cd; --clay-base: #dac69f; --clay-shade: #b29a74; --tilt: 5deg; margin-top: 13px; }
+    .welcome-face--worried { --clay-light: #f1d5cd; --clay-base: #d9aaa0; --clay-shade: #b47e76; --tilt: 10deg; }
+    .welcome-face::before {
+      content: ""; position: absolute; left: 24%; top: 38%; width: 12%; aspect-ratio: 1;
+      border-radius: 50%; background: #584036; box-shadow: 15px 1px 0 #584036;
+    }
+    .welcome-face::after {
+      content: ""; position: absolute; left: 36%; top: 55%; width: 27%; height: 19%;
+      border-bottom: 2px solid #68473c; border-radius: 0 0 65% 65%;
+    }
+    .welcome-face--thoughtful::after { width: 20%; left: 47%; top: 53%; border-radius: 30%; transform: rotate(-8deg); }
+    .welcome-face--worried::after { top: 63%; border: 0; border-top: 2px solid #68473c; border-radius: 60% 60% 0 0; }
     @media (prefers-reduced-motion: no-preference) {
-      .welcome-crane img { animation: welcome-crane-sway 9s ease-in-out infinite alternate; }
+      .welcome-face { animation: welcome-face-float 7s ease-in-out infinite alternate; }
+      .welcome-face--thoughtful { animation-delay: -3s; }
+      .welcome-face--worried { animation-delay: -5s; }
     }
-    @keyframes welcome-crane-sway {
-      from { transform: translateY(2px) rotate(-5deg); filter: drop-shadow(2px 5px 4px rgba(119,77,55,.23)); }
-      to { transform: translateY(-6px) rotate(5deg); filter: drop-shadow(5px 10px 6px rgba(119,77,55,.15)); }
+    @keyframes welcome-face-float {
+      from { transform: translateY(2px) rotate(var(--tilt)); }
+      to { transform: translateY(-3px) rotate(calc(var(--tilt) + 4deg)); }
     }
     @media (max-width: 760px) {
-      .welcome .welcome-story { display: grid; gap: 3px; }
-      .welcome-crane { width: 65px; justify-self: end; }
+      .welcome .welcome-story { grid-template-columns: 1fr; gap: 2px; }
+      .welcome-faces { justify-self: end; }
     }
     #site-nav a:not(.nav-contact) {
       position: relative;
@@ -250,7 +266,7 @@
     <section class="welcome welcome-compact section-shell section-pad" aria-labelledby="welcome-title">
       <div class="ambient-composition ambient--welcome" aria-hidden="true"><span class="ambient-shape ambient-orb ambient-orb--sage"></span><span class="ambient-shape ambient-ring ambient-ring--small"></span><i class="ambient-bead bead-one"></i><i class="ambient-bead bead-two"></i></div>
       <div class="section-kicker"><span>Worum es geht</span></div>
-      <div class="welcome-content"><h2 id="welcome-title">Jeder Mensch bringt<br>seine eigene Geschichte mit.</h2><div class="welcome-story"><p>Wenn Sorgen, Konflikte oder Veränderungen den Alltag schwer machen, schauen wir gemeinsam darauf, was im Alltag belastet und was helfen kann.</p><div class="welcome-crane" aria-hidden="true"><img src="images/origami-transparent-icon.png" alt="" width="512" height="512" loading="lazy" decoding="async"></div></div></div>
+      <div class="welcome-content"><h2 id="welcome-title">Jeder Mensch bringt<br>seine eigene Geschichte mit.</h2><div class="welcome-story"><p>Wenn Sorgen, Konflikte oder Veränderungen den Alltag schwer machen, schauen wir gemeinsam darauf, was im Alltag belastet und was helfen kann.</p><div class="welcome-faces" aria-hidden="true"><span class="welcome-face"></span><span class="welcome-face welcome-face--thoughtful"></span><span class="welcome-face welcome-face--worried"></span></div></div></div>
     </section>
 
     <section class="offer-section" id="angebot">
