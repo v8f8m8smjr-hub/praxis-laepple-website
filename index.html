@@ -32,8 +32,15 @@
   <link rel="stylesheet" href="image-styles.css?v=20261110f">
   <link rel="stylesheet" href="illustrations.css?v=20261126-ersttermin">
   <style>
+    #main { --warm-glass-surface: linear-gradient(145deg, rgba(255,253,249,.62), rgba(233,219,199,.29)); }
+    #main .offer-card,
+    #main .membership-note,
+    #main .contact-card,
+    #main .process-steps article > span { background: var(--warm-glass-surface); }
+    #main .offer-card { transition: none; }
+    #main .offer-card:hover { transform: none; }
     #start .hero-actions .button {
-      background: linear-gradient(145deg, rgba(255,253,249,.62), rgba(233,219,199,.29));
+      background: var(--warm-glass-surface);
       border: 1px solid rgba(159,120,94,.46);
       border-top-color: rgba(255,255,255,.94);
       border-left-color: rgba(255,250,244,.88);
